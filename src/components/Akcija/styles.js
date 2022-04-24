@@ -10,11 +10,14 @@ export const WrapAkcija = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 20px;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
   }
 `
 export const WrapTockice = styled.div`
@@ -37,9 +40,11 @@ export const Naslov = styled.h1`
   /* or 66px */
 
   color: #ffffff;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 42 px;
   }
 `
 export const Paragraf = styled.h3`
@@ -54,9 +59,19 @@ export const Paragraf = styled.h3`
   /* or 36px */
 
   color: #ffffff;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 120%;
+    width: 45%;
+  }
+  @media screen and (max-width: 800px) {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
   }
 `
 export const Linija = styled.div`
@@ -65,8 +80,10 @@ export const Linija = styled.div`
   height: 2px;
   background-color: white;
   margin-left: -70px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 `

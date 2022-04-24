@@ -12,6 +12,9 @@ export const UslugeWrap = styled.div`
   @media screen and (max-width: 1000px) {
     padding-left: 0;
   }
+  @media screen and (max-width: 500px) {
+    padding-left: 40px;
+  }
 `
 export const NaslovUsluge = styled.h1`
   font-family: Buenard;
@@ -23,10 +26,16 @@ export const NaslovUsluge = styled.h1`
   @media screen and (max-width: 1000px) {
     padding-left: 118px;
   }
+  @media screen and (max-width: 500px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    padding-left: 0px;
+  }
 `
 export const ParagraphText = styled.h1`
   width: 718px;
-  height: 110px;
+  height: auto;
   left: 121px;
   top: 951px;
 
@@ -45,6 +54,14 @@ export const ParagraphText = styled.h1`
   opacity: 0.8;
   @media screen and (max-width: 1000px) {
     padding-left: 118px;
+    width: 80vw;
+  }
+  @media screen and (max-width: 500px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    padding-left: 0;
+    width: 80vw;
   }
 `
 export const Rectangle = styled.div`
@@ -127,10 +144,16 @@ export const WrapCard = styled.div`
     width: 83%;
     margin: 8px auto;
   }
+  @media screen and (max-width: 500px) {
+    width: 43%;
+    height: 208px;
+    min-width: 100vw;
+    left: -60px;
+  }
 `
 export const WrapTitleText = styled.div`
   width: 363px;
-  padding: 23px;
+  padding: 23px 35px 0 11px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -143,9 +166,9 @@ export const CardTitle = styled.h2`
   font-size: 26px;
   color: #000000;
   margin-bottom: 7px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 460px) {
+    max-width: 100px;
+    font-size: 19px;
   }
 `
 export const CardText = styled.p`
@@ -159,9 +182,9 @@ export const CardText = styled.p`
 
   color: #37313c;
   opacity: 0.7;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 500px) {
+    min-width: 160px;
+    font-size: 14px;
   }
 `
 export const WrapSitneTockice = styled.div`

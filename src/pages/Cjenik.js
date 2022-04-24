@@ -13,7 +13,7 @@ const Cjenik = () => {
 
   return (
     <Layout title="Kolega dental">
-      <Seo title="Naši radovi" />
+      <Seo title="Cjenik" />
       <CjenikHero />
       {isAction ? <Akcija /> : ""}
       <SekcijaCjenik />

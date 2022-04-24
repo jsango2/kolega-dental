@@ -1,10 +1,11 @@
+import { Link } from "gatsby"
 import React from "react"
 import { WrapButton } from "./styles.js"
 
-const Button = ({ text, color, bgColor, width }) => {
+const Button = ({ text, color, bgColor, width, linkTo }) => {
   return (
     <WrapButton color={color} bgColor={bgColor} width={width}>
-      {text}
+      <Link to={linkTo}> {text}</Link>
     </WrapButton>
   )
 }

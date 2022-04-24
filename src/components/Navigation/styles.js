@@ -48,6 +48,9 @@ export const Hamburger = styled.div`
   @media screen and (min-width: 1001px) {
     display: none;
   }
+  @media screen and (max-width: 400px) {
+    right: 25px;
+  }
 `
 export const CloseIcon = styled.div`
   position: absolute;

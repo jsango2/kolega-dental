@@ -23,9 +23,14 @@ export const WrapButton = styled.button`
   text-align: left;
   cursor: pointer;
   /* SUNRISE / White */
-
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  a {
+    text-decoration: none;
+    color: ${props => props.color};
+  }
+  &:hover a {
+    color: white;
+  }
+  @media screen and (max-width: 400px) {
+    /* width: 80vw; */
   }
 `

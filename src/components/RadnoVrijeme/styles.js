@@ -105,9 +105,9 @@ export const Crta = styled.div`
 `
 export const WrapMap = styled.div`
   position: absolute;
-  top: 261px;
+  top: 226px;
   left: 27%;
-  width: 823px;
+  width: 944px;
   height: 523px;
   border-radius: 20px;
   overflow: hidden;

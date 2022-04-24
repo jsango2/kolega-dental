@@ -9,9 +9,9 @@ export const HeroWrap = styled.div`
   height: 660px;
   background-color: #c4c4c4;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    height: auto;
   }
 `
 export const TextBox = styled.div`
@@ -29,6 +29,26 @@ export const TextBox = styled.div`
     width: 372px;
     height: 430px;
   }
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+    margin-left: 110px;
+    margin: 0px auto 0 auto;
+    height: auto;
+    padding: 50px 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100vw;
+    min-width: 330px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+    margin-left: 0px;
+    margin: 0px auto 0 auto;
+    height: auto;
+    padding: 50px 0;
+  }
 `
 export const PhotoBox = styled.div`
   position: relative;
@@ -42,9 +62,13 @@ export const PhotoBox = styled.div`
   margin-top: 65px;
   margin-left: 85px;
   border-radius: 25px 0 0 25px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    height: 91vw;
+    max-height: 650px;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    margin-top: 0;
   }
 `
 export const Title = styled.h1`
@@ -57,6 +81,21 @@ export const Title = styled.h1`
   @media screen and (max-width: 1200px) {
     font-size: 48px;
   }
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  @media screen and (max-width: 500px) {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    /* or 43px */
+    width: 75vw;
+    min-width: 270px;
+    text-align: center;
+  }
 `
 export const Para = styled.p`
   font-family: "Avenir Next";
@@ -67,9 +106,18 @@ export const Para = styled.p`
   /* or 22px */
 
   color: #f5f5f5;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
+  @media screen and (max-width: 500px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    text-align: center;
+    margin-bottom: 30px;
+    width: 80vw;
   }
 `
 export const WrapSitneTockice = styled.div`
@@ -85,9 +133,10 @@ export const WrapSitneTockice2 = styled.div`
   position: absolute;
   left: 33%;
   bottom: 130px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    left: auto;
+    right: 0%;
+    bottom: 28%;
   }
 `
 export const WrapCircle = styled.div`
@@ -95,8 +144,7 @@ export const WrapCircle = styled.div`
   z-index: 2;
   right: 0%;
   bottom: 0%;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    z-index: 0;
   }
 `
