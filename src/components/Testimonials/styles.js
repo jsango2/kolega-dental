@@ -3,10 +3,9 @@ import styled from "styled-components"
 export const WrapTestimonialsSection = styled.div`
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 543px;
   display: flex;
   align-items: center;
-  padding-bottom: 80px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -14,18 +13,45 @@ export const WrapTestimonialsSection = styled.div`
 `
 export const TestimonailBox = styled.div`
   position: relative;
-  width: 661px;
+  width: 100%;
   height: 545px;
   background: #32bde3;
-  border-radius: 38px;
-  padding-top: 160px;
-  padding-left: 60px;
-  margin-left: 140px;
+  /* border-radius: 38px; */
+  /* padding-top: 160px;
+  /* margin-left: 140px; */
+  padding-left: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+
+  .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 29px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: rgb(255, 255, 255) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.95 !important;
+    color: white !important;
+  }
+  .slick-dots {
+    text-align: left !important;
+    bottom: -50px !important;
+  }
+  @media screen and (max-width: 1000px) {
+    padding-left: 22%;
   }
 `
 export const Rectangle = styled.div`
@@ -46,8 +72,9 @@ export const TestimonialLogo = styled.div`
   position: absolute;
   width: 386px;
   height: 386px;
-  bottom: 20px;
-  right: 40px;
+  bottom: 40px;
+  right: 50%;
+  transform: translate(50%);
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -104,14 +131,13 @@ export const Naslov = styled.h3`
   }
 `
 export const Text = styled.h4`
-  width: 400px;
+  width: 540px;
   font-family: Avenir Next;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
   line-height: 120%;
   /* or 25px */
-
   /* SUNRISE / White */
 
   color: #ffffff;

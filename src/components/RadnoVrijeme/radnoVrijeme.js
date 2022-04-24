@@ -33,7 +33,7 @@ const radnoVrijeme = () => {
           Upute Google Maps
           <img src={arrow} alt="arrow" />
         </Button>
-        <Adresa>Put Murvice 12c (kod Mirovinskog)</Adresa>
+        {/* <Adresa>Put Murvice 12c (kod Mirovinskog)</Adresa> */}
       </Lokacija>
       <WrapMap>
         <iframe

@@ -1,5 +1,11 @@
 import React from "react"
-import { NaslovUsluge, Rectangle, Usluge, ParagraphText } from "./styles.js"
+import {
+  NaslovUsluge,
+  Rectangle,
+  Usluge,
+  ParagraphText,
+  WrapSitneTockice,
+} from "./styles.js"
 import UslugaCard from "./uslugaCard.js"
 import p1 from "../../../content/assets/photo1usluge.png"
 import p2 from "../../../content/assets/photo2usluge.png"
@@ -9,10 +15,14 @@ import p5 from "../../../content/assets/photo5usluge.png"
 import p6 from "../../../content/assets/photo6usluge.png"
 import p7 from "../../../content/assets/photo7usluge.png"
 import p8 from "../../../content/assets/photo8usluge.png"
+import tockice from "../../../content/assets/tockiceNaseUsluge.svg"
 
 const uslugeStomatologija = () => {
   return (
     <>
+      <WrapSitneTockice>
+        <img src={tockice} alt="little dots" />
+      </WrapSitneTockice>
       <NaslovUsluge>Naše usluge / opća stomatologija</NaslovUsluge>
       <ParagraphText>
         Vjerujemo da je glavni preduvjet za uspiješan posjet zubaru razvijanje

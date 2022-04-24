@@ -21,7 +21,8 @@ export const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #32bde38a;
+  background: #32bde3;
+  opacity: 0.55;
 
   @media screen and (max-width: 768px) {
     /* order: 1;

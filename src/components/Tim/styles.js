@@ -4,12 +4,13 @@ import Zrinka from "../../../content/assets/imageZrinka.png"
 export const WrapTim = styled.div`
   position: relative;
   width: 100%;
-  height: 608px;
+  height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-top: 80px;
   padding-left: 30px;
+  padding-bottom: 90px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -78,13 +79,29 @@ export const ParagraphText = styled.p`
   font-family: Avenir Next;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 120%;
   /* or 22px */
 
   /* SUNRISE / Light Charcoal */
 
   color: #403845;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const SaznajVise = styled.p`
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  margin-top: 20px;
+  /* SUNRISE/Coral */
+  cursor: pointer;
+  color: #32bde3;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

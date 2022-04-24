@@ -3,14 +3,14 @@ import tockice from "../../../content/assets/tockice.svg"
 
 export const UslugeWrap = styled.div`
   position: relative;
-  width: 100%;
-  height: 2245px;
+  max-width: 100%;
+  width: 100vw;
+  height: auto;
   background-color: #32bde312;
   padding-top: 82px;
   padding-left: 118px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    padding-left: 0;
   }
 `
 export const NaslovUsluge = styled.h1`
@@ -20,9 +20,8 @@ export const NaslovUsluge = styled.h1`
   font-size: 55px;
   color: #32bde3;
   margin-bottom: 40px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    padding-left: 118px;
   }
 `
 export const ParagraphText = styled.h1`
@@ -44,9 +43,8 @@ export const ParagraphText = styled.h1`
   color: #37313c;
 
   opacity: 0.8;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    padding-left: 118px;
   }
 `
 export const Rectangle = styled.div`
@@ -117,17 +115,17 @@ export const Usluge = styled.div`
 export const WrapCard = styled.div`
   position: relative;
   z-index: 2;
-  width: 575px;
+  width: 43%;
+  min-width: 410px;
   height: 190px;
   display: flex;
-  margin-bottom: 16px;
   background-color: white;
   border-radius: 20px;
   margin: 8px 16px;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    width: 83%;
+    margin: 8px auto;
   }
 `
 export const WrapTitleText = styled.div`
@@ -161,6 +159,15 @@ export const CardText = styled.p`
 
   color: #37313c;
   opacity: 0.7;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const WrapSitneTockice = styled.div`
+  position: absolute;
+  right: 0;
+  top: 20px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

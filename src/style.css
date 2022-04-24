@@ -221,7 +221,8 @@ a:focus {
 
 /* Custom classes */
 .WrapLayout {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100vw;
   height: auto;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -296,7 +297,7 @@ a:focus {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   font-family: "slick";
   font-size: 29px !important;
   line-height: 20px;
@@ -319,4 +320,15 @@ a:focus {
 .slick-dots {
   text-align: left !important;
   bottom: -50px !important;
+} */
+
+.accordion:nth-child(odd) {
+  background-color: #cfe3ec;
+}
+.accordionTitle {
+  color: #32bde3;
+}
+.accordionContent {
+  padding-left: 32px;
+  color: #32bde3;
 }

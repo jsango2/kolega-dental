@@ -21,7 +21,6 @@ import "slick-carousel/slick/slick-theme.css"
 import { testimonialList } from "./testimonialList"
 
 const testimonials = () => {
-  console.log(testimonialList)
   const settings = {
     // arrows: true,
     dots: true,
@@ -61,19 +60,19 @@ const testimonials = () => {
       <TestimonailBox>
         <Slider {...settings}>
           {testimonialList.map(testimonial => (
-            <>
+            <React.Fragment key={testimonial.ime}>
               <Naslov>{testimonial.ime}</Naslov>
               <Text>{testimonial.testimonial}</Text>
-            </>
+            </React.Fragment>
           ))}
         </Slider>
         <TestimonialLogo>
           <img src={logo} alt="logo" />
         </TestimonialLogo>
       </TestimonailBox>
-      <TestimonialPhoto>
+      {/* <TestimonialPhoto>
         <img src={photo} alt="logo" />
-      </TestimonialPhoto>
+      </TestimonialPhoto> */}
     </WrapTestimonialsSection>
   )
 }

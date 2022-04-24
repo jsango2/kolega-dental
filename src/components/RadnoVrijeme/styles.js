@@ -5,7 +5,7 @@ export const WrapRadnoVrijeme = styled.div`
   position: relative;
   width: 100%;
   height: 1215px;
-
+  /* padding-top: 60px; */
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -14,7 +14,7 @@ export const WrapRadnoVrijeme = styled.div`
 export const WrapTimetable = styled.div`
   position: absolute;
   top: 40px;
-  left: 47px;
+  left: -31px;
   width: 481px;
   height: 650px;
   background: #32bde3;
@@ -26,9 +26,9 @@ export const WrapTimetable = styled.div`
   align-items: center;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  padding-left: 32px;
+  @media screen and (max-width: 1000px) {
+    width: 400px;
   }
 `
 export const Title = styled.h2`
@@ -105,8 +105,8 @@ export const Crta = styled.div`
 `
 export const WrapMap = styled.div`
   position: absolute;
-  top: 270px;
-  right: 102px;
+  top: 261px;
+  left: 27%;
   width: 823px;
   height: 523px;
   border-radius: 20px;
@@ -162,15 +162,15 @@ export const WrapSitneTockice = styled.div`
   }
 `
 export const Lokacija = styled.div`
-  width: 713px;
+  width: 85%;
   height: 396px;
   position: absolute;
   z-index: 5;
   bottom: 70px;
-  left: 50%;
+  left: 40%;
   overflow: hidden;
   border-radius: 20px;
-  transform: translate(-50%);
+  transform: translate(-25%);
   background-image: url(${mjesto});
   background-position: center;
   background-repeat: no-repeat;
@@ -213,8 +213,8 @@ export const Button = styled.button`
   border: 3px solid #32bde3;
   box-sizing: border-box;
   border-radius: 15px;
-  bottom: 66px;
-  right: 42px;
+  bottom: 46px;
+  left: 42px;
   font-family: Avenir Next;
   font-style: normal;
   font-weight: 500;

@@ -6,13 +6,13 @@ export const WrapButton = styled.button`
   align-items: center;
   padding: 14px 32px;
   border: none;
-  background: #32bde3;
-  /* Medium Drop */
-
+  background-color: ${props => props.bgColor};
+  color: ${props => props.color};
+  width: ${props => props.width};
+  justify-content: center;
   box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
   border-radius: 30px;
   /* Buttons */
-
   font-family: Avenir Next;
   font-style: normal;
   font-weight: bold;
@@ -24,7 +24,6 @@ export const WrapButton = styled.button`
   cursor: pointer;
   /* SUNRISE / White */
 
-  color: #ffffff;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
