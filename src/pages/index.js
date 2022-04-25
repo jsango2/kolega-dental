@@ -16,6 +16,7 @@ import Cjenik from "../components/CjenikUsluga"
 import SavjetiSection from "../components/SavjetiSection"
 import Akcija from "../components/Akcija"
 import Footer from "../components/Footer"
+import FooterMobile from "../components/FooterMobile"
 
 const BlogIndex = ({ data }) => {
   const [isAction, setIsAction] = useState(true)
