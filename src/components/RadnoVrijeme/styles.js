@@ -7,8 +7,7 @@ export const WrapRadnoVrijeme = styled.div`
   height: 1215px;
   /* padding-top: 60px; */
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    height: auto;
   }
 `
 export const WrapTimetable = styled.div`
@@ -30,6 +29,15 @@ export const WrapTimetable = styled.div`
   @media screen and (max-width: 1000px) {
     width: 400px;
   }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    min-width: 350px;
+    position: relative;
+    top: auto;
+    left: auto;
+    padding-left: 0;
+    margin: 0 auto 130px auto;
+  }
 `
 export const Title = styled.h2`
   font-family: Avenir Next;
@@ -44,9 +52,8 @@ export const Title = styled.h2`
   /* SUNRISE / White */
 
   color: #ffffff;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 460px) {
+    font-size: 34px;
   }
 `
 export const Satnica = styled.div`
@@ -62,8 +69,7 @@ export const DnevniRaspored = styled.div`
   width: 337px;
   margin-bottom: 25px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 300px;
   }
 `
 export const WrapDanCrta = styled.div`
@@ -73,8 +79,7 @@ export const WrapDanCrta = styled.div`
   width: 167px;
 
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 153px;
   }
 `
 export const Dan = styled.div`
@@ -114,8 +119,12 @@ export const WrapMap = styled.div`
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 83vw;
+    border-radius: 0;
   }
 `
 export const Sat = styled.div`
@@ -178,8 +187,14 @@ export const Lokacija = styled.div`
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 70vw;
+    bottom: auto;
+    left: 0;
+    transform: translate(0%);
+    border-radius: 0;
   }
 `
 export const Adresa = styled.p`

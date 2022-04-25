@@ -145,15 +145,27 @@ export const WrapCard = styled.div`
     margin: 8px auto;
   }
   @media screen and (max-width: 500px) {
-    width: 43%;
+    width: 47%;
     height: 208px;
-    min-width: 100vw;
-    left: -60px;
+    min-width: 108vw;
+    left: -80px;
   }
 `
 export const WrapTitleText = styled.div`
-  width: 363px;
+  width: 60%;
+  padding: 23px 35px 0 20px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const WrapPhoto = styled.div`
+  width: 40%;
+  height: 100%;
   padding: 23px 35px 0 11px;
+  background: url(${props => props.photo}) no-repeat center;
+
+  background-size: cover;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

@@ -331,4 +331,6 @@ a:focus {
 .accordionContent {
   padding-left: 32px;
   color: #32bde3;
+  padding-right: 29px;
+  /* padding-top: 20px; */
 }

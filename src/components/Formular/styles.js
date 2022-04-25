@@ -43,6 +43,9 @@ export const Photo = styled.div`
     border-radius: 20px;
     left: -33px;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 export const Form = styled.div`
   & form {
@@ -61,7 +64,15 @@ export const Form = styled.div`
     -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
     box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
     @media screen and (max-width: 1000px) {
+      top: 60px;
+
+      position: relative;
       width: 500px;
+      right: auto;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 500px) {
+      width: 93%;
     }
   }
   & input {
@@ -120,6 +131,6 @@ export const Form = styled.div`
     cursor: pointer;
   }
   @media screen and (max-width: 1000px) {
-    width: 500px;
+    /* width: 500px; */
   }
 `

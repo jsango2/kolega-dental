@@ -18,11 +18,15 @@ import MobileMenu from "../MobileMenu"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   // console.log(isOpen)
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+    console.log("clicked")
+  }
   return (
     <NavbarWrap>
-      <MobileMenu isOpen={isOpen} />
-      {isOpen ? (
-        <CloseIcon onClick={() => setIsOpen(!isOpen)}>
+      <MobileMenu isOpen={isOpen} handleClick={handleClick} />
+      {/* {isOpen ? (
+        <CloseIcon onClick={handleClick}>
           <LineX1 />
           <LineX2 />
         </CloseIcon>
@@ -32,8 +36,12 @@ const Navbar = () => {
           <Line />
           <Line />
         </Hamburger>
-      )}
-
+      )} */}
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <Line />
+        <Line />
+        <Line />
+      </Hamburger>
       <LogoWrap>
         <img src={Logo} width="100%" alt="" />
       </LogoWrap>

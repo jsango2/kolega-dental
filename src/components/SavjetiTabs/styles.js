@@ -13,6 +13,11 @@ export const WrapSavjeti = styled.div`
 
     margin: 0 auto;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+    margin: 0 auto;
+  }
 `
 export const Title = styled.div`
   font-family: "Avenir Next";
@@ -23,14 +28,14 @@ export const Title = styled.div`
   /* or 36px */
   width: 100%;
   color: #ffffff;
+  text-align: center;
   background: #32bde3;
   border-radius: 14px 14px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 560px) {
+    font-size: 23px;
   }
 `
 export const WrapQuestion = styled.div`
@@ -48,9 +53,8 @@ export const WrapQuestion = styled.div`
   /* &:nth-child(n) {
     background-color: blue;
   } */
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 560px) {
+    padding: 8px 0;
   }
 `
 
@@ -86,9 +90,8 @@ export const Question = styled.div`
 
   /* SUNRISE/Coral */
 
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
   }
 `
 export const Para = styled.div`

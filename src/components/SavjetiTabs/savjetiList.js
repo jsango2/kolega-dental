@@ -11,7 +11,7 @@ export const savjetiList = [
   },
   {
     pitanje:
-      "Što ako se odlučim više nikad ne koristiti filere i botox, hoće li moje lice se ispuhati ili izgledati gore nego prije?",
+      "Ako se odlučim više nikad ne koristiti filere i botox, hoće li moje lice izgledati gore nego prije?",
     odgovor:
       "To se nikako ne može dogoditi jer stavljena hijaluronska kiselina stanje kože može samo popraviti, a prestankom apliciranja koža je još uvijek u boljem stanju nego prije prve aplikacije. To se nikako ne može dogoditi jer stavljena hijaluronska kiselina stanje kože može samo popraviti, a prestankom apliciranja koža je još uvijek u boljem stanju nego prije prve aplikacije. ",
   },

@@ -5,16 +5,23 @@ export const WrapNasaOrdinacija = styled.div`
   width: 100%;
   height: 769px;
   padding-top: 80px;
-  padding-left: 124px;
+  /* padding-left: 124px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
   }
 `
 export const Text = styled.div`
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    text-align: center;
   }
 `
 export const Title = styled.h1`
@@ -24,9 +31,10 @@ export const Title = styled.h1`
   font-size: 55px;
   color: #32bde3;
   margin-bottom: 50px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  margin-left: 120px;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    margin-left: 0;
   }
 `
 export const ImageWrap = styled.div`
@@ -36,8 +44,7 @@ export const ImageWrap = styled.div`
   overflow: hidden;
   cursor: pointer;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    margin: 0 auto;
   }
 `
 export const ParagraphText = styled.h1`

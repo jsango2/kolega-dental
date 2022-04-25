@@ -17,7 +17,7 @@ export const LogoWrap = styled.div`
   position: relative;
   width: 374px;
   min-width: 230px;
-
+  z-index: 5;
   @media screen and (max-width: 1050px) {
     width: 250px;
   }
@@ -38,7 +38,7 @@ export const LinkWrap = styled.div`
 `
 export const Hamburger = styled.div`
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   right: 40px;
   height: 18px;
   display: flex;
@@ -54,7 +54,7 @@ export const Hamburger = styled.div`
 `
 export const CloseIcon = styled.div`
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   top: 52px;
   right: 40px;
   height: 12px;

@@ -33,35 +33,35 @@ const NasaOrdinacija = () => {
     pauseOnHover: true,
     // nextArrow: <NextArrow />,
     // prevArrow: <PrevArrow />,
-    // className: "testimonialSlider",
-    // responsive: [
-    //   {
-    //     breakpoint: 1300,
-    //     settings: {
-    //       dots: true,
-    //       fade: false,
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       lazyLoad: true,
-    //       arrows: true,
-    //       speed: 500,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 900,
-    //     settings: {
-    //       dots: true,
-    //       fade: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       lazyLoad: true,
-    //       arrows: false,
-    //       speed: 500,
-    //     },
-    //   },
-    // ],
+    className: "testimonialSlider",
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          dots: true,
+          fade: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          lazyLoad: true,
+          arrows: true,
+          speed: 500,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          dots: true,
+          fade: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          lazyLoad: true,
+          arrows: false,
+          speed: 500,
+        },
+      },
+    ],
   }
 
   const handleClickImage = (e, image) => {

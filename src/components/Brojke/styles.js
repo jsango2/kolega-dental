@@ -4,14 +4,23 @@ import brojkeBg from "../../../content/assets/brojkeBG.png"
 export const WrapBrojke = styled.div`
   position: relative;
   width: 100%;
-  height: 465px;
+  height: auto;
+  padding: 125px 0;
   background-image: url(${brojkeBg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: 90px 0;
+  }
+`
+export const Wrap = styled.div`
+  display: flex;
+  margin: 12px 0;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -32,6 +41,7 @@ export const Overlay = styled.div`
 export const Box = styled.div`
   position: relative;
   width: 199px;
+  min-width: 199px;
   height: 216px;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -43,9 +53,10 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 23px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 500px) {
+    width: 170px;
+    min-width: 170px;
+    margin: 0 7px;
   }
 `
 export const Number = styled.h2`

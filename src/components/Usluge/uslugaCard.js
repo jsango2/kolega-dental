@@ -1,10 +1,16 @@
 import React from "react"
-import { WrapCard, WrapTitleText, CardText, CardTitle } from "./styles.js"
+import {
+  WrapCard,
+  WrapTitleText,
+  CardText,
+  CardTitle,
+  WrapPhoto,
+} from "./styles.js"
 
 const uslugaCard = ({ photo, text, title }) => {
   return (
     <WrapCard>
-      <img src={photo} alt="" />
+      <WrapPhoto photo={photo}></WrapPhoto>
       <WrapTitleText>
         <CardTitle>{title}</CardTitle>
         <CardText>{text}</CardText>

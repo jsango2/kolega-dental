@@ -12,8 +12,9 @@ export const WrapTim = styled.div`
   padding-left: 30px;
   padding-bottom: 90px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 0;
   }
 `
 export const Image = styled.div`
@@ -21,25 +22,35 @@ export const Image = styled.div`
   position: relative;
   width: 694px;
   height: 445px;
+  left: -6%;
   border-radius: 20px;
   background-image: url(${Zrinka});
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 100%;
+    left: 0%;
+    border-radius: 0;
+    height: 70vw;
   }
 `
 export const WrapText = styled.div`
   width: 485px;
   padding: 0 23px;
   margin-left: 90px;
+  @media screen and (max-width: 1000px) {
+    width: 650px;
+    padding: 0 12px;
+    margin-left: 18px;
+  }
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 85%;
+    padding: 40px 0;
+    left: 0%;
+    border-radius: 0;
   }
 `
 export const Rectangle = styled.div`
@@ -70,9 +81,8 @@ export const Title = styled.h1`
   /* SUNRISE / Charcoal */
 
   color: #37313c;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    font-size: 48px;
   }
 `
 export const ParagraphText = styled.p`

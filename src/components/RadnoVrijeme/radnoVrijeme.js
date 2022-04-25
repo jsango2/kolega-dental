@@ -18,16 +18,8 @@ import sitnetockice from "../../../content/assets/sitnetockice.svg"
 const radnoVrijeme = () => {
   return (
     <WrapRadnoVrijeme>
+      {" "}
       <Timetable />
-      <WrapTockice>
-        <img src={tockice} alt="dots" />
-      </WrapTockice>
-      <WrapSitneTockice>
-        <img src={sitnetockice} alt="little dots" />
-      </WrapSitneTockice>
-      <WrapLogo>
-        <img src={logobox} alt="logo" />
-      </WrapLogo>
       <Lokacija>
         <Button>
           Upute Google Maps
@@ -44,6 +36,15 @@ const radnoVrijeme = () => {
           style={{ border: "none" }}
         ></iframe>
       </WrapMap>
+      <WrapTockice>
+        <img src={tockice} alt="dots" />
+      </WrapTockice>
+      <WrapSitneTockice>
+        <img src={sitnetockice} alt="little dots" />
+      </WrapSitneTockice>
+      <WrapLogo>
+        <img src={logobox} alt="logo" />
+      </WrapLogo>
     </WrapRadnoVrijeme>
   )
 }

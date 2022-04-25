@@ -49,9 +49,13 @@ export const TestimonailBox = styled.div`
   .slick-dots {
     text-align: left !important;
     bottom: -50px !important;
+    z-index: 10 !important;
   }
   @media screen and (max-width: 1000px) {
     padding-left: 22%;
+  }
+  @media screen and (max-width: 500px) {
+    padding-left: 11%;
   }
 `
 export const Rectangle = styled.div`
@@ -147,7 +151,10 @@ export const Text = styled.h4`
 
   color: #ffffff;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 70%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 88%;
+    font-size: 18px;
   }
 `
