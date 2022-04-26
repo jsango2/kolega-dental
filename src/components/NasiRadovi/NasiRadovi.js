@@ -99,7 +99,7 @@ const NasiRadovi = () => {
         </ParagraphText> */}
         <Usluge>
           {Links.map((e, index) => (
-            <Usluga key={e.index}>
+            <Usluga key={index}>
               <Link to={e.link}>{e.veza}</Link>
             </Usluga>
           ))}
