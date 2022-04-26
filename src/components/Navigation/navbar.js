@@ -43,7 +43,9 @@ const Navbar = () => {
         <Line />
       </Hamburger>
       <LogoWrap>
-        <img src={Logo} width="100%" alt="" />
+        <Link to="/">
+          <img src={Logo} width="100%" alt="" />
+        </Link>
       </LogoWrap>
       <LinkWrap>
         {Links.map((e, index) => (

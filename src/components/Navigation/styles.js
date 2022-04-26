@@ -18,6 +18,7 @@ export const LogoWrap = styled.div`
   width: 374px;
   min-width: 230px;
   z-index: 5;
+  cursor: pointer;
   @media screen and (max-width: 1050px) {
     width: 250px;
   }

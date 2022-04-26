@@ -17,6 +17,7 @@ import SavjetiSection from "../components/SavjetiSection"
 import Akcija from "../components/Akcija"
 import Footer from "../components/Footer"
 import FooterMobile from "../components/FooterMobile"
+import NasiRadovi from "../components/NasiRadovi/NasiRadovi"
 
 const BlogIndex = ({ data }) => {
   const [isAction, setIsAction] = useState(true)
@@ -38,6 +39,7 @@ const BlogIndex = ({ data }) => {
       <SavjetiSection />
       {/* <FAQ /> */}
       <NasaOrdinacija />
+      <NasiRadovi />
     </Layout>
   )
 }

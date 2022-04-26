@@ -3,12 +3,13 @@ import styled from "styled-components"
 export const WrapNasaOrdinacija = styled.div`
   position: relative;
   width: 100%;
-  height: 769px;
-  padding-top: 80px;
+  height: auto;
+  padding-top: 0px;
   /* padding-left: 124px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-bottom: 60px;
   @media screen and (max-width: 768px) {
     padding-left: 0;
     padding-top: 0;
@@ -113,6 +114,45 @@ export const Kvadrat = styled.div`
   position: absolute;
   right: 0;
   top: -140px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const Usluge = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 120px;
+  margin-bottom: 60px;
+  height: 75px;
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+    margin: 0 auto 60px auto;
+    height: auto;
+  }
+`
+export const Usluga = styled.div`
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  a {
+    color: #403845;
+  }
+  /* SUNRISE / Light Charcoal */
+
+  color: #403845;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
