@@ -42,22 +42,18 @@ const Zaposleni = () => {
           stažiranje u DZ Peščenica. <br /> Od 1995. do 1999. radi u DZ Zadar na
           raznim lokacijama.
           <br />
-          <br /> 1999. otvara svoju privatnu ordinaciju dentalne medicine u
-          Zadru na području Arbanasa. Iste godine sklapa i ugovor sa HZZO-om.
-          <br />
+          1999. otvara svoju privatnu ordinaciju dentalne medicine u Zadru na
+          području Arbanasa. Iste godine sklapa i ugovor sa HZZO-om.
           <br />
           2008/2009. upisuje Poslijediplomski specijalistički studij na
           Stomatološkom fakultetu u Zagrebu gdje magistrira 2012. s temom
           "Temporomandibularni poremećaji u ronilaca" uz mentora prof. dr.sc.
-          Vjekoslava Jerolimova.
-          <br />
-          <br /> Redovito se usavršava na domaćim i stranim kongresima i
-          tečajevima, a od 2014. počinje se usavršavati na području estetske
-          medicine. Usavršava se u Hrvatskoj, Italiji, Njemačkoj, Velikoj
-          Britaniji i Nizozemskoj. Protetika, estetska stomatologija i estetska
-          medicina i rad s pacijentima s dentalnom fobijom su područja koja je
-          najviše profesionalno zanimaju. <br />
-          <br />
+          Vjekoslava Jerolimova. Redovito se usavršava na domaćim i stranim
+          kongresima i tečajevima, a od 2014. počinje se usavršavati na području
+          estetske medicine. Usavršava se u Hrvatskoj, Italiji, Njemačkoj,
+          Velikoj Britaniji i Nizozemskoj. Protetika, estetska stomatologija i
+          estetska medicina i rad s pacijentima s dentalnom fobijom su područja
+          koja je najviše profesionalno zanimaju. <br />
           Doktorica govori engleski, njemački i talijanski, a u slobodno vrijeme
           bavi se trčanjem, plivanjem i ronjenjem.
         </TextZrinka>

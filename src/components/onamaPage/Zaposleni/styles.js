@@ -15,9 +15,8 @@ export const ZaposleniWrap = styled.div`
   overflow: hidden;
   padding-top: 130px;
   padding-bottom: 100px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 1000px) {
+    padding-top: 0;
   }
 `
 export const Dobrodosli = styled.div`
@@ -25,8 +24,7 @@ export const Dobrodosli = styled.div`
   display: flex;
   width: 100%;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column-reverse;
   }
 `
 export const Text = styled.div`
@@ -44,14 +42,21 @@ export const Text = styled.div`
   /* SUNRISE / Charcoal */
 
   color: #37313c;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+  }
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 `
 export const TextZrinka = styled(Text)`
   padding: 50px 120px 0 0px;
 
+  @media screen and (max-width: 1000px) {
+    padding: 33px 52px 0 0px;
+  }
   @media screen and (max-width: 768px) {
   }
 `
@@ -72,9 +77,12 @@ export const Zrinka = styled.div`
   /* SUNRISE / Charcoal */
 
   color: #37313c;
+  @media screen and (max-width: 1000px) {
+    width: 106%;
+  }
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column;
+    left: 0;
   }
 `
 export const Nevena = styled.div`
@@ -133,8 +141,10 @@ export const Photo = styled.div`
   background-size: cover;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 100%;
+    height: 70vw;
+    border-radius: 0;
+    right: 0;
   }
 `
 export const PhotoZrinka = styled.div`
@@ -148,9 +158,15 @@ export const PhotoZrinka = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
+  @media screen and (max-width: 1000px) {
+    height: 688px;
+  }
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    left: 0;
+
+    width: 100%;
+    height: 70vw;
+    border-radius: 0;
   }
 `
 export const PhotoJasminka = styled.div`

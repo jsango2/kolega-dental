@@ -33,8 +33,9 @@ export const PhotoBox = styled.div`
   position: relative;
   z-index: 2;
   display: flex;
-  width: 50%;
+  width: 67%;
   height: 120%;
+  margin-left: auto;
   background-image: url(${heroimage});
   background-size: cover;
   background-repeat: no-repeat;

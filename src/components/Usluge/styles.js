@@ -140,6 +140,8 @@ export const WrapCard = styled.div`
   border-radius: 20px;
   margin: 8px 16px;
   overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px -2px #dceef2;
+  box-shadow: 5px 5px 15px -2px #dceef2;
   @media screen and (max-width: 1000px) {
     width: 83%;
     margin: 8px auto;
