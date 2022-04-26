@@ -3,15 +3,23 @@ import styled from "styled-components"
 export const WrapSekcija = styled.div`
   position: relative;
   width: 100%;
-  height: 800px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 100px 130px;
+  padding: 100px 70px;
   @media screen and (max-width: 1300px) {
-    width: 821px;
-
     margin: 0 auto;
+    /* flex-direction: column; */
+    padding: 100px 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 500px) {
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 100px 0px;
   }
 `
 export const NaciniPlacanja = styled.div`
@@ -23,10 +31,8 @@ export const NaciniPlacanja = styled.div`
   text-align: center;
   margin: 0 auto;
   padding-bottom: 100px;
-  @media screen and (max-width: 1300px) {
-    /* width: 821px;
-
-    margin: 0 auto; */
+  @media screen and (max-width: 5000px) {
+    width: 90%;
   }
 `
 export const Title = styled.h2`

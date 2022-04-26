@@ -10,8 +10,8 @@ export const HeroWrap = styled.div`
   background-color: #c4c4c4;
   /* overflow-x: hidden; */
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column-reverse;
+    height: auto;
   }
 `
 export const TextBox = styled.div`
@@ -22,11 +22,17 @@ export const TextBox = styled.div`
   align-items: center;
   width: 50%;
   height: 366px;
-
+  z-index: 3;
   @media screen and (max-width: 1200px) {
     margin-left: 60px;
     width: 372px;
     height: 430px;
+  }
+  @media screen and (max-width: 768px) {
+    align-items: flex-start;
+    margin: 50px auto 0 auto;
+    width: 372px;
+    height: 290px;
   }
 `
 export const PhotoBox = styled.div`
@@ -42,8 +48,10 @@ export const PhotoBox = styled.div`
   border-radius: 0 0 0 25px;
   overflow: hidden;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 100%;
+    height: 70vw;
+    margin: 0;
+    border-radius: 0;
   }
 `
 export const Title = styled.h1`
@@ -95,7 +103,37 @@ export const WrapCircle = styled.div`
   right: 0%;
   bottom: -30%;
   @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
+export const WrapCircleMob = styled.div`
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+  bottom: 0%;
+  @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
+  }
+`
+export const WrapButton = styled.div`
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+  bottom: 15%;
+  @media screen and (max-width: 768px) {
+    position: relative;
+    margin: 0 auto;
+    left: auto;
+    top: 75%;
+  }
+`
+export const WrapButtonMob = styled.div`
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 8%;
+  @media screen and (max-width: 768px) {
   }
 `

@@ -7,10 +7,9 @@ export const WrapSekcija = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 1300px) {
-    width: 821px;
-
-    margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 0 auto 30px auto;
   }
 `
 export const Title = styled.div`
@@ -27,9 +26,8 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 500px) {
+    border-radius: 0px;
   }
 `
 export const WrapPrice = styled.div`
@@ -63,6 +61,9 @@ export const WrapPrice = styled.div`
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
+  }
+  @media screen and (max-width: 500px) {
+    padding: 0 25px;
   }
 `
 

@@ -10,7 +10,7 @@ export const WrapCjenik = styled.div`
   justify-content: space-around;
   align-items: center;
   background-image: url(${foto});
-  background-position: center;
+  background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 768px) {
@@ -93,5 +93,11 @@ export const TestimonialLogo = styled.div`
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
+  }
+`
+export const WrapButton = styled.div`
+  position: relative;
+  top: 150px;
+  @media screen and (max-width: 768px) {
   }
 `

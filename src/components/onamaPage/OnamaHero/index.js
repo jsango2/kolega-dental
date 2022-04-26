@@ -12,9 +12,14 @@ import {
   WrapSitneTockice,
   WrapSitneTockice2,
   WrapCircle,
+  WrapCircleMob,
+  WrapButton,
+  WrapButtonMob,
 } from "./styles.js"
+import useWindowSize from "../../usewindowsize.js"
 
 const Zaposleni = () => {
+  const size = useWindowSize()
   return (
     <HeroWrap>
       <WrapSitneTockice>
@@ -28,7 +33,34 @@ const Zaposleni = () => {
         <WrapCircle>
           <img src={circle} alt="circle" />
         </WrapCircle>
+        {size.width > 768 ? (
+          <WrapButton>
+            <Button
+              text="DOGOVORI SVOJ TERMIN"
+              color="#32BDE3"
+              bgColor="#FFFFFF"
+              width="341px"
+            />
+          </WrapButton>
+        ) : (
+          ""
+        )}
       </PhotoBox>
+      {size.width < 768 ? (
+        <WrapButtonMob>
+          <Button
+            text="DOGOVORI SVOJ TERMIN"
+            color="#32BDE3"
+            bgColor="#FFFFFF"
+            width="341px"
+          />
+        </WrapButtonMob>
+      ) : (
+        ""
+      )}
+      <WrapCircleMob>
+        <img src={circle} alt="circle" />
+      </WrapCircleMob>
     </HeroWrap>
   )
 }

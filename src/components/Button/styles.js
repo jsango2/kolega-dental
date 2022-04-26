@@ -5,6 +5,7 @@ export const WrapButton = styled.button`
   flex-direction: row;
   align-items: center;
   padding: 14px 32px;
+  max-height: 53px;
   border: none;
   background-color: ${props => props.bgColor};
   color: ${props => props.color};
@@ -19,7 +20,7 @@ export const WrapButton = styled.button`
   font-size: 21px;
   line-height: 120%;
   /* or 25px */
-
+  z-index: 2;
   text-align: left;
   cursor: pointer;
   /* SUNRISE / White */

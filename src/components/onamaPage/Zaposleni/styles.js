@@ -23,8 +23,12 @@ export const Dobrodosli = styled.div`
   position: relative;
   display: flex;
   width: 100%;
+  @media screen and (max-width: 1000px) {
+    margin-top: 130px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
 `
 export const Text = styled.div`
@@ -43,12 +47,12 @@ export const Text = styled.div`
 
   color: #37313c;
   @media screen and (max-width: 1000px) {
-    padding: 0;
+    padding: 30px;
   }
   @media screen and (max-width: 768px) {
     width: 90%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 50px 0 20px 0;
   }
 `
 export const TextZrinka = styled(Text)`
@@ -103,8 +107,8 @@ export const Nevena = styled.div`
 
   color: #37313c;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column;
+    left: 0;
   }
 `
 export const Jasminka = styled.div`
@@ -125,8 +129,7 @@ export const Jasminka = styled.div`
 
   color: #37313c;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    flex-direction: column-reverse;
   }
 `
 export const Photo = styled.div`
@@ -181,8 +184,11 @@ export const PhotoJasminka = styled.div`
   background-size: cover;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    right: 0;
+    width: 100%;
+    height: 70vw;
+
+    border-radius: 0;
   }
 `
 export const PhotoNevena = styled.div`
@@ -197,7 +203,9 @@ export const PhotoNevena = styled.div`
   background-size: cover;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    left: unset;
+    width: 100%;
+    height: 70vw;
+    border-radius: 0;
   }
 `
