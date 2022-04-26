@@ -276,11 +276,17 @@ export const Bottom = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    padding-left: 0;
   }
+
   li {
     margin-left: 3px;
     list-style-type: none;
+
+    padding-left: 0;
   }
+
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

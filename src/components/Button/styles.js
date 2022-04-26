@@ -29,7 +29,7 @@ export const WrapButton = styled.button`
     color: ${props => props.color};
   }
   &:hover a {
-    color: white;
+    color: lightblue;
   }
   @media screen and (max-width: 400px) {
     /* width: 80vw; */

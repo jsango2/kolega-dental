@@ -19,7 +19,7 @@ export const WrapNasaOrdinacija = styled.div`
     justify-content: center;
   }
   .slick-dots li button:before {
-    font-family: 'slick';
+    font-family: "slick";
     font-size: 8px;
     line-height: 20px;
     position: absolute;
@@ -27,11 +27,13 @@ export const WrapNasaOrdinacija = styled.div`
     left: 0;
     width: 20px;
     height: 20px;
-    content: '•';
+    content: "•";
     text-align: center;
-    opacity: .25;
+    opacity: 0.25;
     color: #428ff6;
+  }
 `
+
 export const Text = styled.div`
   @media screen and (max-width: 768px) {
     text-align: center;

@@ -40,6 +40,7 @@ const Hero = () => {
           color="#32BDE3"
           bgColor="#FFFFFF"
           width="341px"
+          linkTo="/"
         />
       </TextBox>
       <PhotoBox></PhotoBox>

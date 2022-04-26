@@ -29,8 +29,10 @@ const FooterMobile = () => {
   return (
     <WrapFooter>
       <WrapLinks>
-        {Links.map(e => (
-          <Link to={e.link}>{e.veza}</Link>
+        {Links.map((e, index) => (
+          <Link key={index} to={e.link}>
+            {e.veza}
+          </Link>
         ))}
       </WrapLinks>
       <Logo>

@@ -60,8 +60,8 @@ const Footer = () => {
         </WrapMreze>
       </WrapUp>
       <WrapLinks>
-        {Links.map(e => (
-          <Link to={e.link} activeStyle={{ color: "#32BDE3" }}>
+        {Links.map((e, index) => (
+          <Link key={index} to={e.link} activeStyle={{ color: "#32BDE3" }}>
             {e.veza}
           </Link>
         ))}

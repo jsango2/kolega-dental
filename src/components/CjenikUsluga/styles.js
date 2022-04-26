@@ -10,7 +10,7 @@ export const WrapCjenik = styled.div`
   justify-content: space-around;
   align-items: center;
   background-image: url(${foto});
-  background-position: unset;
+  background-position: 17%;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 768px) {
