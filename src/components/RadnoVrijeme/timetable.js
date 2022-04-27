@@ -9,10 +9,18 @@ import {
   Crta,
   Sat,
 } from "./styles.js"
+import { useInView } from "react-intersection-observer"
 
-const timetable = () => {
+const Timetable = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.05,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <WrapTimetable>
+    <WrapTimetable ref={ref} inView={inView}>
       <Title>RADNO VRIJEME</Title>
       <Satnica>
         <DnevniRaspored>
@@ -69,4 +77,4 @@ const timetable = () => {
   )
 }
 
-export default timetable
+export default Timetable

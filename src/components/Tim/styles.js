@@ -30,6 +30,10 @@ export const Image = styled.div`
   background-size: cover;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+  transition: all 1s ease-in-out;
+
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(-20%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     width: 100%;
     left: 0%;
@@ -41,6 +45,10 @@ export const WrapText = styled.div`
   width: 485px;
   padding: 0 23px;
   margin-left: 90px;
+  transition: all 1s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(20%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
+
   @media screen and (max-width: 1000px) {
     width: 650px;
     padding: 0 12px;

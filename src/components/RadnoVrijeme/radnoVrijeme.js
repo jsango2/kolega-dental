@@ -15,7 +15,7 @@ import logobox from "../../../content/assets/logobox.svg"
 import tockice from "../../../content/assets/tockice.svg"
 import sitnetockice from "../../../content/assets/sitnetockice.svg"
 
-const radnoVrijeme = () => {
+const RadnoVrijeme = () => {
   return (
     <WrapRadnoVrijeme>
       {" "}
@@ -49,4 +49,4 @@ const radnoVrijeme = () => {
   )
 }
 
-export default radnoVrijeme
+export default RadnoVrijeme

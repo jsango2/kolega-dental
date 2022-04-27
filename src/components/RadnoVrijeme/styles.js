@@ -26,6 +26,9 @@ export const WrapTimetable = styled.div`
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   padding-left: 32px;
+  transition: all 1s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(-40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     width: 400px;
   }

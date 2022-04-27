@@ -9,13 +9,21 @@ import {
   SaznajVise,
 } from "./styles.js"
 import blurbg from "../../../content/assets/blurbg.png"
+import { useInView } from "react-intersection-observer"
 
-const tim = () => {
+const Tim = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.3,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <WrapTim>
+    <WrapTim ref={ref}>
       <Rectangle />
-      <Image></Image>
-      <WrapText>
+      <Image inView={inView} />
+      <WrapText inView={inView}>
         <Title>Preko 25 godina iskustva</Title>
         <ParagraphText>
           Dobrodošli u Ordinaciju dentalne medicine dr. Zrinka Kolega. Želja nam
@@ -38,4 +46,4 @@ const tim = () => {
   )
 }
 
-export default tim
+export default Tim

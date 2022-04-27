@@ -18,7 +18,7 @@ const MobileMenu = ({ isOpen, handleClick }) => {
       </CloseIcon>
       {Links.map((e, index) => (
         <SingleLink key={index}>
-          <Link to={e.link} activeStyle={{ color: "#32BDE3" }}>
+          <Link to={e.link} activeStyle={{ color: e.color }}>
             {e.veza}
           </Link>{" "}
         </SingleLink>

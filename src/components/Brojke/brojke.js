@@ -4,12 +4,20 @@ import people from "../../../content/assets/bi_people.svg"
 import clock from "../../../content/assets/cil_clock.svg"
 import calendar from "../../../content/assets/calendar.svg"
 import zub from "../../../content/assets/zub.svg"
+import { useInView } from "react-intersection-observer"
 
-const brojke = () => {
+const Brojke = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.5,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <WrapBrojke>
+    <WrapBrojke ref={ref}>
       <Overlay />
-      <Wrap>
+      <Wrap inView={inView}>
         <Box>
           <img src={people} alt="people icon" />
           <Number>3000</Number>
@@ -22,7 +30,7 @@ const brojke = () => {
           <Text>Sati rada u 2021. godini</Text>
         </Box>
       </Wrap>
-      <Wrap>
+      <Wrap inView={inView}>
         <Box>
           {" "}
           <img src={calendar} alt="people icon" />
@@ -40,4 +48,4 @@ const brojke = () => {
   )
 }
 
-export default brojke
+export default Brojke

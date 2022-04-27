@@ -21,6 +21,10 @@ export const WrapBrojke = styled.div`
 export const Wrap = styled.div`
   display: flex;
   margin: 12px 0;
+  transition: all 1.2s;
+
+  opacity: ${props => (props.inView ? `1` : `0`)};
+
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
