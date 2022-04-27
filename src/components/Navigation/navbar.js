@@ -42,7 +42,7 @@ const Navbar = () => {
         <Line />
         <Line />
       </Hamburger>
-      <LogoWrap>
+      <LogoWrap isOpen={isOpen}>
         <Link to="/">
           <img src={Logo} width="100%" alt="" />
         </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
       <LinkWrap>
         {Links.map((e, index) => (
           <SingleLink key={index}>
-            <Link to={e.link} activeStyle={{ color: "#32BDE3" }}>
+            <Link to={e.link} activeStyle={{ color: e.color }}>
               {e.veza}
             </Link>
           </SingleLink>

@@ -139,6 +139,10 @@ export const Text = styled.p`
   color: #ffffff;
   text-align: center;
   opacity: 0.8;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

@@ -4,7 +4,7 @@ export const WrapSavjetiSection = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  padding: 220px 0 100px 124px;
+  padding: 220px 0 30px 124px;
 
   @media screen and (max-width: 1300px) {
     height: auto;

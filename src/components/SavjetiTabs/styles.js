@@ -8,6 +8,7 @@ export const WrapSavjeti = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 10;
   @media screen and (max-width: 1300px) {
     width: 821px;
 
@@ -36,6 +37,7 @@ export const Title = styled.div`
   justify-content: center;
   @media screen and (max-width: 560px) {
     font-size: 23px;
+    border-radius: 0;
   }
 `
 export const WrapQuestion = styled.div`

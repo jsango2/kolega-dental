@@ -4,7 +4,7 @@ export const WrapNasaOrdinacija = styled.div`
   position: relative;
   width: 100%;
   height: 769px;
-  padding-top: 80px;
+  padding-top: 30px;
   /* padding-left: 124px; */
   display: flex;
   flex-direction: column;

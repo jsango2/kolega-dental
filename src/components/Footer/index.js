@@ -41,8 +41,13 @@ const Footer = () => {
           <Title>KONTAKT</Title>
           <Line />
           <Text>
-            Put Murvice 12c 23000 Zadar <br />
-            <br /> hello@kolegadental.com 023 214854
+            Put Murvice 12c <br /> 23000 Zadar <br />
+            <br />{" "}
+            <a href="mailto:hello@kolegadental.com?subject=Kontakt mail">
+              hello@kolegadental.com{" "}
+            </a>{" "}
+            <br />
+            <a href="tel:+385 23214854">023 214854</a>
             <br />
             <br /> Radno vrijeme: <br />
             Pon., Sri. 13:00 - 20:30
@@ -54,8 +59,12 @@ const Footer = () => {
           <TitleAt>@KOLEGADENTAL</TitleAt>
           <PratiteNas>PRATITE NAS NA DRUŠTVENIM MREŽAMA</PratiteNas>
           <WrapIcons>
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
+            <a href="https://www.facebook.com/kolegamedicine">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/kolegamedicinezadar/">
+              <img src={instagram} alt="instagram" />
+            </a>
           </WrapIcons>
         </WrapMreze>
       </WrapUp>

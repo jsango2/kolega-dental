@@ -140,6 +140,10 @@ export const Text = styled.p`
   color: #ffffff;
 
   opacity: 0.8;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -228,6 +232,7 @@ export const Bottom = styled.div`
   color: #ffffff;
   ul {
     display: flex;
+    padding-left: 0;
   }
   li {
     margin-left: 3px;
