@@ -140,8 +140,12 @@ export const WrapCard = styled.div`
   border-radius: 20px;
   margin: 8px 16px;
   overflow: hidden;
+  transition: all 1s ease-out;
   -webkit-box-shadow: 5px 5px 15px -2px #dceef2;
   box-shadow: 5px 5px 15px -2px #dceef2;
+  transform: ${props =>
+    props.inView ? `translate(0px, 0px)` : `translate(0px,70px)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     width: 83%;
     margin: 8px auto;

@@ -6,10 +6,17 @@ import {
   CardTitle,
   WrapPhoto,
 } from "./styles.js"
+import { useInView } from "react-intersection-observer"
 
-const uslugaCard = ({ photo, text, title }) => {
+const UslugaCard = ({ photo, text, title }) => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.3,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
   return (
-    <WrapCard>
+    <WrapCard ref={ref} inView={inView}>
       <WrapPhoto photo={photo}></WrapPhoto>
       <WrapTitleText>
         <CardTitle>{title}</CardTitle>
@@ -19,4 +26,4 @@ const uslugaCard = ({ photo, text, title }) => {
   )
 }
 
-export default uslugaCard
+export default UslugaCard

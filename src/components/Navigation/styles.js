@@ -20,11 +20,11 @@ export const LogoWrap = styled.div`
   z-index: 5;
   cursor: pointer;
   transition: all 1s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(-100%)`)};
   box-shadow: ${props =>
     props.isOpen
-      ? `-webkit-box-shadow: 5px 5px 15px -1px #BECED1; 
-box-shadow: 5px 5px 15px -1px #BECED1;`
-      : `5px 5px 15px -1px rgba(190,206,209,0);`};
+      ? `2px 2px 10px 0px #C2C2C2`
+      : `2px 2px 10px 0px rgba(194,194,194,0)`};
   @media screen and (max-width: 1050px) {
     width: 250px;
   }

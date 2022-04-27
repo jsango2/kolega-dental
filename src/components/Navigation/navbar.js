@@ -14,6 +14,7 @@ import {
 } from "./styles.js"
 import { Links } from "./links"
 import MobileMenu from "../MobileMenu"
+import { useInView } from "react-intersection-observer"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,8 +23,15 @@ const Navbar = () => {
     setIsOpen(!isOpen)
     console.log("clicked")
   }
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.1,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <NavbarWrap>
+    <NavbarWrap ref={ref}>
       <MobileMenu isOpen={isOpen} handleClick={handleClick} />
       {/* {isOpen ? (
         <CloseIcon onClick={handleClick}>
@@ -42,7 +50,7 @@ const Navbar = () => {
         <Line />
         <Line />
       </Hamburger>
-      <LogoWrap isOpen={isOpen}>
+      <LogoWrap isOpen={isOpen} inView={inView}>
         <Link to="/">
           <img src={Logo} width="100%" alt="" />
         </Link>
