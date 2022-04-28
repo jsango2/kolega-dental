@@ -124,6 +124,9 @@ export const WrapSitneTockice = styled.div`
   position: absolute;
   left: 3%;
   top: 90px;
+  transition: all 1.6s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -133,6 +136,10 @@ export const WrapSitneTockice2 = styled.div`
   position: absolute;
   left: 33%;
   bottom: 130px;
+  transition: all 1.6s ease-in-out;
+  transform: ${props =>
+    props.inView ? `translate(0%, 0%)` : `translate(0%, 40%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     left: auto;
     right: 0%;
@@ -144,6 +151,10 @@ export const WrapCircle = styled.div`
   z-index: 2;
   right: 0%;
   bottom: 0%;
+  transition: all 1.6s ease-in-out 1s;
+  transform: ${props =>
+    props.inView ? `translate(0%, 0%)` : `translate(60%, 60%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     z-index: 0;
   }

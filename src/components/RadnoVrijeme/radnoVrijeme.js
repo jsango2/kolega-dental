@@ -14,20 +14,28 @@ import arrow from "../../../content/assets/arrow.svg"
 import logobox from "../../../content/assets/logobox.svg"
 import tockice from "../../../content/assets/tockice.svg"
 import sitnetockice from "../../../content/assets/sitnetockice.svg"
+import { useInView } from "react-intersection-observer"
 
 const RadnoVrijeme = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.05,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
     <WrapRadnoVrijeme>
       {" "}
       <Timetable />
-      <Lokacija>
+      <Lokacija ref={ref} inView={inView}>
         <Button>
           Upute Google Maps
           <img src={arrow} alt="arrow" />
         </Button>
         {/* <Adresa>Put Murvice 12c (kod Mirovinskog)</Adresa> */}
       </Lokacija>
-      <WrapMap>
+      <WrapMap ref={ref} inView={inView}>
         <iframe
           width="100%"
           height="523px"

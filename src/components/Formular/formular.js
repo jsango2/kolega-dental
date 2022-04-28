@@ -1,12 +1,20 @@
 import React from "react"
 import { WrapFormSection, Form, Photo, Rectangle } from "./styles.js"
+import { useInView } from "react-intersection-observer"
 
-const formular = () => {
+const Formular = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.05,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <WrapFormSection>
-      <Photo />
-      <Rectangle />
-      <Form>
+    <WrapFormSection ref={ref}>
+      <Photo inView={inView} />
+      <Rectangle inView={inView} />
+      <Form inView={inView}>
         <form>
           <input type="text" name="Ime" placeholder="Ime" />
           <input type="email" name="Email" placeholder="Email" />
@@ -18,4 +26,4 @@ const formular = () => {
   )
 }
 
-export default formular
+export default Formular

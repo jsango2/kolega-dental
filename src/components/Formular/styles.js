@@ -38,6 +38,9 @@ export const Photo = styled.div`
   left: 140px;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+  transition: all 1.3s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(-40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     width: 475px;
     border-radius: 20px;
@@ -63,6 +66,9 @@ export const Form = styled.div`
     padding-top: 69px;
     -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
     box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+    transition: all 1.6s ease-in-out;
+    transform: ${props => (props.inView ? `translate(0%)` : `translate(50%)`)};
+    opacity: ${props => (props.inView ? `1` : `0`)};
     @media screen and (max-width: 1000px) {
       top: 60px;
 

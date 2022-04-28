@@ -121,6 +121,9 @@ export const WrapMap = styled.div`
   overflow: hidden;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+  transition: all 1.6s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     position: relative;
     top: auto;
@@ -189,6 +192,10 @@ export const Lokacija = styled.div`
   background-size: cover;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+  transition: all 1s ease-in-out 1s;
+  transform: ${props =>
+    props.inView ? `translate(-20%, 0%)` : `translate(-20%,30%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     position: relative;
     top: auto;

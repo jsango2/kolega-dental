@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import foto1 from "../../../content/assets/trioSavjetiFoto.png"
 
 export const WrapSavjetiSection = styled.div`
   position: relative;
@@ -18,9 +19,18 @@ export const WrapSavjetiSection = styled.div`
 export const WrapImage1 = styled.div`
   position: absolute;
   width: 600px;
-  height: auto;
+  height: 400px;
   right: 0;
   top: 221px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-image: url(${foto1});
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1.6s ease-in-out;
+  transform: ${props => (props.inView ? `translate(5%)` : `translate(40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1300px) {
     display: none;
   }

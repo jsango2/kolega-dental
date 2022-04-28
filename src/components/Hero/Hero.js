@@ -14,17 +14,25 @@ import {
   WrapSitneTockice2,
   WrapCircle,
 } from "./styles.js"
+import { useInView } from "react-intersection-observer"
 
 const Hero = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.5,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
-    <HeroWrap>
-      <WrapCircle>
+    <HeroWrap ref={ref}>
+      <WrapCircle inView={inView}>
         <img src={circle} alt="circle" />
       </WrapCircle>
-      <WrapSitneTockice>
+      <WrapSitneTockice inView={inView}>
         <img src={sitnetockice} alt="little dots" />
       </WrapSitneTockice>
-      <WrapSitneTockice2>
+      <WrapSitneTockice2 inView={inView}>
         <img src={sitnetockice2} alt="little dots 2" />
       </WrapSitneTockice2>
       <TextBox>
