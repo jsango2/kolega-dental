@@ -20,7 +20,7 @@ const Zaposlenik = ({ text, photo, index, left, trans }) => {
   useEffect(() => {
     setContentHeight(content.current.scrollHeight)
     console.log(contentHeight)
-  }, [window.innerWidth])
+  }, [])
 
   const { ref, inView } = useInView({
     /* Optional options */
