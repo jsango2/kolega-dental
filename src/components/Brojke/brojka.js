@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer"
 const Brojka = ({ photo, number, text, delay }) => {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.1,
     // trigger inView function only once
     triggerOnce: true,
   })
