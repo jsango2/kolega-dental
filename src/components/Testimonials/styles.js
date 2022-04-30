@@ -150,7 +150,7 @@ export const Header = styled.h3`
   font-size: 36px;
   line-height: 120%;
   /* or 43px */
-
+  min-width: 300px;
   text-align: center;
 
   /* SUNRISE / White */
