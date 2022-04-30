@@ -143,6 +143,10 @@ export const WrapMap = styled.div`
     height: 83vw;
     border-radius: 0;
   }
+  @media screen and (max-width: 440px) {
+    transform: none;
+    opacity: 1;
+  }
 `
 export const Sat = styled.div`
   font-family: Work Sans;
