@@ -12,7 +12,6 @@ import {
   TitleAt,
   PratiteNas,
   WrapLinks,
-  Link,
   Bottom,
   WrapIcons,
 } from "./styles.js"
@@ -20,6 +19,7 @@ import blurbg from "../../../content/assets/blurbg.png"
 import facebook from "../../../content/assets/facebook.svg"
 import instagram from "../../../content/assets/instagram.svg"
 import { Links } from "../Navigation/links.js"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -70,7 +70,7 @@ const Footer = () => {
       </WrapUp>
       <WrapLinks>
         {Links.map((e, index) => (
-          <Link key={index} to={e.link} activeStyle={{ color: "#32BDE3" }}>
+          <Link key={index} to={e.link}>
             {e.veza}
           </Link>
         ))}

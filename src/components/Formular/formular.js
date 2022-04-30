@@ -1,6 +1,15 @@
 import React from "react"
-import { WrapFormSection, Form, Photo, Rectangle } from "./styles.js"
+import {
+  WrapFormSection,
+  Form,
+  Photo,
+  Rectangle,
+  Title,
+  WrapFormMob,
+} from "./styles.js"
 import { useInView } from "react-intersection-observer"
+import useWindowSize from "../usewindowsize"
+import Button from "../Button/Button.js"
 
 const Formular = () => {
   const { ref, inView } = useInView({
@@ -10,17 +19,32 @@ const Formular = () => {
     triggerOnce: true,
   })
 
+  const size = useWindowSize()
   return (
     <WrapFormSection ref={ref}>
       <Photo inView={inView} />
       <Rectangle inView={inView} />
       <Form inView={inView}>
-        <form>
-          <input type="text" name="Ime" placeholder="Ime" />
-          <input type="email" name="Email" placeholder="Email" />
-          <textarea name="Text" rows="5" cols="33" placeholder="Poruka" />
-          <button type="submit">POŠALJI UPIT</button>
-        </form>
+        {size.width > 440 ? (
+          <form>
+            <input type="text" name="Ime" placeholder="Ime" />
+            <input type="email" name="Email" placeholder="Email" />
+            <textarea name="Text" rows="5" cols="33" placeholder="Poruka" />
+            <button type="submit">POŠALJI UPIT</button>
+          </form>
+        ) : (
+          <WrapFormMob>
+            <Title>Obratite nam se s povjerenjem</Title>
+            <a href="mailto:hello@kolegadental.com?subject=Kontakt mail">
+              <Button
+                text="POŠALJI UPIT"
+                color="#32BDE3"
+                bgColor="#FFFFFF"
+                width="341px"
+              />
+            </a>
+          </WrapFormMob>
+        )}
       </Form>
     </WrapFormSection>
   )

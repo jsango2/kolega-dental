@@ -21,13 +21,11 @@ export const WrapBrojke = styled.div`
 export const Wrap = styled.div`
   display: flex;
   margin: 12px 0;
-  transition: all 1.2s;
-
-  opacity: ${props => (props.inView ? `1` : `0`)};
 
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 330px;
   }
 `
 export const Overlay = styled.div`
@@ -57,10 +55,21 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 23px;
+
+  transition: ${props => `all 1s ease-out ${props.delay}s`};
+
+  opacity: ${props => (props.inView ? `1` : `0`)};
+  @media screen and (max-width: 768px) {
+    margin: 6px;
+  }
   @media screen and (max-width: 500px) {
-    width: 170px;
-    min-width: 170px;
-    margin: 0 7px;
+    width: 45%;
+    min-width: 155px;
+    /* margin: 0 7px;  */
+  }
+  @media screen and (max-width: 335px) {
+    width: 85%;
+    height: 170px;
   }
 `
 export const Number = styled.h2`

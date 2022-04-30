@@ -13,11 +13,21 @@ import p2 from "../../../content/assets/photo10usluge.png"
 import p3 from "../../../content/assets/photo11usluge.png"
 import p4 from "../../../content/assets/photo12usluge.png"
 import p5 from "../../../content/assets/photo13usluge.png"
+import { useInView } from "react-intersection-observer"
 
-const uslugeEstetika = () => {
+const UslugeEstetika = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.3,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
     <>
-      <NaslovUsluge>Naše usluge / estetska medicina</NaslovUsluge>
+      <NaslovUsluge ref={ref} inView={inView}>
+        Naše usluge / estetska medicina
+      </NaslovUsluge>
       <WrapTockice></WrapTockice>
       <Rectangle2 />
       <ParagraphText>
@@ -58,4 +68,4 @@ const uslugeEstetika = () => {
   )
 }
 
-export default uslugeEstetika
+export default UslugeEstetika

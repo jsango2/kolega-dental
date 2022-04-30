@@ -16,15 +16,25 @@ import p6 from "../../../content/assets/photo6usluge.png"
 import p7 from "../../../content/assets/photo7usluge.png"
 import p8 from "../../../content/assets/photo8usluge.png"
 import tockice from "../../../content/assets/tockiceNaseUsluge.svg"
+import { useInView } from "react-intersection-observer"
 
-const uslugeStomatologija = () => {
+const UslugeStomatologija = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.3,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+
   return (
     <>
       <WrapSitneTockice>
         <img src={tockice} alt="little dots" />
       </WrapSitneTockice>
-      <NaslovUsluge>Naše usluge / opća stomatologija</NaslovUsluge>
-      <ParagraphText>
+      <NaslovUsluge ref={ref} inView={inView}>
+        Naše usluge / opća stomatologija
+      </NaslovUsluge>
+      <ParagraphText inView={inView}>
         Vjerujemo da je glavni preduvjet za uspiješan posjet zubaru razvijanje
         uzajamnog povjerenja između lječnika i pacijenta. Naš fokus je na
         edukaciji o oralnom zdravlju i osobnom pristupu svakom pacijentu.
@@ -78,4 +88,4 @@ const uslugeStomatologija = () => {
   )
 }
 
-export default uslugeStomatologija
+export default UslugeStomatologija

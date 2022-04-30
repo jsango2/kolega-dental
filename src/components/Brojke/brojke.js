@@ -5,6 +5,7 @@ import clock from "../../../content/assets/cil_clock.svg"
 import calendar from "../../../content/assets/calendar.svg"
 import zub from "../../../content/assets/zub.svg"
 import { useInView } from "react-intersection-observer"
+import Brojka from "./brojka.js"
 
 const Brojke = () => {
   const { ref, inView } = useInView({
@@ -18,31 +19,30 @@ const Brojke = () => {
     <WrapBrojke ref={ref}>
       <Overlay />
       <Wrap inView={inView}>
-        <Box>
-          <img src={people} alt="people icon" />
-          <Number>3000</Number>
-          <Text>Pacijenata u 2021. godini</Text>
-        </Box>
-        <Box>
-          {" "}
-          <img src={clock} alt="people icon" />
-          <Number>1690</Number>
-          <Text>Sati rada u 2021. godini</Text>
-        </Box>
-      </Wrap>
-      <Wrap inView={inView}>
-        <Box>
-          {" "}
-          <img src={calendar} alt="people icon" />
-          <Number>30</Number>
-          <Text>Godina iskustva</Text>
-        </Box>
-        <Box>
-          {" "}
-          <img src={zub} alt="people icon" />
-          <Number>197</Number>
-          <Text>Pohađanih tečajeva</Text>
-        </Box>
+        <Brojka
+          photo={people}
+          number="3000"
+          text="Pacijenata u 2021. godini"
+          delay={0.3}
+        />
+        <Brojka
+          photo={clock}
+          number="1690"
+          text="Sati rada u 2021. godini"
+          delay={0.6}
+        />
+        <Brojka
+          photo={calendar}
+          number="30"
+          text="Godina iskustva"
+          delay={0.9}
+        />
+        <Brojka
+          photo={zub}
+          number="197"
+          text="Pohađanih tečajeva"
+          delay={1.2}
+        />
       </Wrap>
     </WrapBrojke>
   )

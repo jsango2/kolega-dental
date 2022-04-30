@@ -31,7 +31,6 @@ export const Image = styled.div`
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   transition: all 1s ease-in-out;
-
   transform: ${props => (props.inView ? `translate(0%)` : `translate(-20%)`)};
   opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
@@ -91,6 +90,12 @@ export const Title = styled.h1`
   color: #37313c;
   @media screen and (max-width: 1000px) {
     font-size: 48px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 44px;
+  }
+  @media screen and (max-width: 340px) {
+    font-size: 36px;
   }
 `
 export const ParagraphText = styled.p`

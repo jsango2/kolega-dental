@@ -192,10 +192,15 @@ export const WrapLinks = styled.div`
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  a {
+    cursor: pointer;
+    margin-right: 12px;
+    color: #ffffff;
+  }
 
   /* SUNRISE / White */
 
-  color: #ffffff;
+  /* color: #ffffff; */
   @media screen and (max-width: 1000px) {
     display: none;
   }

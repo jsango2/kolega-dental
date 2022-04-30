@@ -28,7 +28,7 @@ const RadnoVrijeme = () => {
     <WrapRadnoVrijeme>
       {" "}
       <Timetable />
-      <Lokacija ref={ref} inView={inView}>
+      <Lokacija>
         <Button>
           Upute Google Maps
           <img src={arrow} alt="arrow" />

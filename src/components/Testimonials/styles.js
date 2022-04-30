@@ -6,6 +6,7 @@ export const WrapTestimonialsSection = styled.div`
   height: 543px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -22,7 +23,7 @@ export const TestimonailBox = styled.div`
   padding-left: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
 
@@ -56,6 +57,10 @@ export const TestimonailBox = styled.div`
   }
   @media screen and (max-width: 500px) {
     padding-left: 11%;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 440px) {
+    box-shadow: unset;
   }
 `
 export const Rectangle = styled.div`
@@ -129,6 +134,29 @@ export const Naslov = styled.h3`
   /* SUNRISE / White */
   margin-bottom: 15px;
   color: #ffffff;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const Header = styled.h3`
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Buenard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  /* or 43px */
+
+  text-align: center;
+
+  /* SUNRISE / White */
+
+  color: #ffffff;
+  margin: 0 auto 0 0;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

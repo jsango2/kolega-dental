@@ -23,6 +23,9 @@ export const NaslovUsluge = styled.h1`
   font-size: 55px;
   color: #32bde3;
   margin-bottom: 40px;
+  transition: all 1s ease-out;
+  transform: ${props => (props.inView ? `translate(0px)` : `translate(70px)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     padding-left: 118px;
   }

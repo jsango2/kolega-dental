@@ -6,9 +6,9 @@ export const WrapFormSection = styled.div`
   width: 100%;
   height: 1030px;
   padding-top: 60px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    padding-top: 0px;
+    height: auto;
   }
 `
 export const Rectangle = styled.div`
@@ -20,6 +20,24 @@ export const Rectangle = styled.div`
   position: absolute;
   left: 25%;
   bottom: -60px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const Title = styled.h1`
+  font-family: "Buenard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  /* or 43px */
+
+  text-align: center;
+
+  /* SUNRISE / White */
+
+  color: #ffffff;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -50,6 +68,27 @@ export const Photo = styled.div`
     display: none;
   }
 `
+export const WrapFormMob = styled.div`
+  width: 100%;
+  height: 338px;
+  background: #32bde3;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 69px;
+  a {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
 export const Form = styled.div`
   & form {
     position: absolute;
@@ -78,7 +117,11 @@ export const Form = styled.div`
       margin: 0 auto;
     }
     @media screen and (max-width: 500px) {
-      width: 93%;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+
+      top: 0;
     }
   }
   & input {

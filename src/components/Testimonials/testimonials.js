@@ -9,6 +9,7 @@ import {
   TestimonialPhoto,
   Rectangle,
   WrapTockice,
+  Header,
 } from "./styles.js"
 import logo from "../../../content/assets/LogoZnak.svg"
 import logo2 from "../../../content/assets/testimonialLogo.svg"
@@ -19,8 +20,10 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { testimonialList } from "./testimonialList"
+import useWindowSize from "../usewindowsize"
 
-const testimonials = () => {
+const Testimonials = () => {
+  const size = useWindowSize()
   const settings = {
     // arrows: true,
     dots: true,
@@ -58,6 +61,8 @@ const testimonials = () => {
         <img src={tockice} alt="dots" />
       </WrapTockice>
       <TestimonailBox>
+        {" "}
+        {size.width < 440 ? <Header>Drugi o nama</Header> : ""}
         <Slider {...settings}>
           {testimonialList.map(testimonial => (
             <React.Fragment key={testimonial.ime}>
@@ -77,4 +82,4 @@ const testimonials = () => {
   )
 }
 
-export default testimonials
+export default Testimonials

@@ -128,8 +128,10 @@ export const WrapSitneTockice = styled.div`
   transform: ${props => (props.inView ? `translate(0%)` : `translate(40%)`)};
   opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    top: unset;
+    bottom: 0px;
+    transform: ${props =>
+      props.inView ? `translate(-18%)` : `translate(-30%)`};
   }
 `
 export const WrapSitneTockice2 = styled.div`

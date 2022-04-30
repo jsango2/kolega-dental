@@ -41,6 +41,16 @@ export const WrapTimetable = styled.div`
     padding-left: 0;
     margin: 0 auto 130px auto;
   }
+  @media screen and (max-width: 440px) {
+    width: 100%;
+    min-width: 350px;
+    position: relative;
+    top: auto;
+    left: auto;
+    padding-left: 0;
+    margin: 0 auto 0 auto;
+    border-radius: 0;
+  }
 `
 export const Title = styled.h2`
   font-family: Avenir Next;
@@ -113,6 +123,7 @@ export const Crta = styled.div`
 `
 export const WrapMap = styled.div`
   position: absolute;
+  z-index: 1;
   top: 226px;
   left: 27%;
   width: 944px;
@@ -192,10 +203,10 @@ export const Lokacija = styled.div`
   background-size: cover;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  transition: all 1s ease-in-out 1s;
+  /* transition: all 1s ease-in-out 1s;
   transform: ${props =>
     props.inView ? `translate(-20%, 0%)` : `translate(-20%,30%)`};
-  opacity: ${props => (props.inView ? `1` : `0`)};
+  opacity: ${props => (props.inView ? `1` : `0`)}; */
   @media screen and (max-width: 768px) {
     position: relative;
     top: auto;

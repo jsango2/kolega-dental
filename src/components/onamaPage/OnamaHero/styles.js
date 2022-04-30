@@ -120,7 +120,7 @@ export const WrapButton = styled.div`
   position: absolute;
   z-index: 2;
   left: 15%;
-  bottom: 15%;
+  bottom: 24%;
   @media screen and (max-width: 768px) {
     position: relative;
     margin: 0 auto;

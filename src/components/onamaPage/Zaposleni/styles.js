@@ -13,27 +13,36 @@ export const ZaposleniWrap = styled.div`
   height: auto;
   background-color: white;
   overflow: hidden;
-  padding-top: 130px;
+  padding-top: 50px;
   padding-bottom: 100px;
+
   @media screen and (max-width: 1000px) {
     padding-top: 0;
+    padding-bottom: 50px;
   }
 `
 export const Dobrodosli = styled.div`
   position: relative;
   display: flex;
   width: 100%;
+  /* height: 400px; */
+  height: ${props => props.height};
+  flex-direction: ${props => (props.index % 2 ? `row` : `row-reverse`)};
+  left: ${props => (props.left === true ? `-77px` : `0px`)};
   @media screen and (max-width: 1000px) {
     margin-top: 130px;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     margin-top: 0;
+    height: auto;
+    left: 0;
   }
 `
 export const Text = styled.div`
   position: relative;
   display: flex;
+  z-index: 3;
   width: 50%;
   padding: 50px 100px 0 140px;
   font-family: "Avenir Next";
@@ -46,6 +55,10 @@ export const Text = styled.div`
   /* SUNRISE / Charcoal */
 
   color: #37313c;
+  transition: all 1.6s ease-out;
+  transform: ${props =>
+    props.inView ? `translate(0%, 0%)` : `translate(0,20%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
     padding: 30px;
   }
@@ -134,15 +147,19 @@ export const Jasminka = styled.div`
 `
 export const Photo = styled.div`
   position: relative;
-  right: -60px;
+  right: -2%;
   display: flex;
   width: 50%;
-  height: 413px;
-  background-image: url(${foto1});
-  background-position: center;
-  background-repeat: no-repeat;
+  min-height: 400px;
+  background: url(${props => props.photo}) no-repeat top center;
+
   background-size: cover;
   border-radius: 25px;
+  z-index: 3;
+  transition: all 1.6s ease-in-out;
+  transform: ${props =>
+    props.inView ? `translate(0%)` : `translate(${props.trans})`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 70vw;
@@ -207,5 +224,38 @@ export const PhotoNevena = styled.div`
     width: 100%;
     height: 70vw;
     border-radius: 0;
+  }
+`
+export const WrapSitneTockice2 = styled.div`
+  position: absolute;
+  left: 1%;
+  bottom: 630px;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const WrapSitneTockice = styled.div`
+  position: absolute;
+  right: 0%;
+  top: 0px;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const Kvadrat = styled.div`
+  position: absolute;
+  right: 0;
+  top: -140px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
   }
 `
