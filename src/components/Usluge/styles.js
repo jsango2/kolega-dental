@@ -155,7 +155,7 @@ export const WrapCard = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 47%;
-    height: 208px;
+    height: 182px;
     min-width: 108vw;
     left: -80px;
   }
