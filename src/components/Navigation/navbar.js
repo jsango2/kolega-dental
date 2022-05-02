@@ -19,10 +19,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  // console.log(isOpen)
   const handleClick = () => {
     setIsOpen(!isOpen)
-    console.log("clicked")
   }
   const { ref, inView } = useInView({
     /* Optional options */

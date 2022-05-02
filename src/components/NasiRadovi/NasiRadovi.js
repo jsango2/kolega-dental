@@ -8,6 +8,7 @@ import Images from "./images.js"
 import sitnetockice from "../../../content/assets/tockiceOrdinacija1.svg"
 import sitnetockice2 from "../../../content/assets/tockiceOrdinacija2.svg"
 import kvadratOrd from "../../../content/assets/kvadratOrdinacija.svg"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import {
   WrapNasaOrdinacija,
@@ -23,6 +24,7 @@ import {
 } from "./styles.js"
 import { Links } from "./links.js"
 import { Link } from "gatsby"
+import { Radovi } from "../nasiRadovi Page/NasiRadoviSection/listaRadova.js"
 const NasiRadovi = () => {
   const [current, setCurrent] = useState()
   const [photoIndex, setPhotoIndex] = useState(0)
@@ -98,9 +100,11 @@ const NasiRadovi = () => {
           nivou i prilagođene induvidualnim potrebama.
         </ParagraphText> */}
         <Usluge>
-          {Links.map((e, index) => (
+          {Radovi.map((e, index) => (
             <Usluga key={index}>
-              <Link to={e.link}>{e.veza}</Link>
+              <AnchorLink to={`/NasiRadovi/#${e.naslov}`}>
+                {e.naslov}
+              </AnchorLink>
             </Usluga>
           ))}
         </Usluge>

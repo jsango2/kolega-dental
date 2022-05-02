@@ -19,7 +19,6 @@ const Zaposlenik = ({ text, photo, index, left, trans }) => {
   const content = useRef(null)
   useEffect(() => {
     setContentHeight(content.current.scrollHeight)
-    console.log(contentHeight)
   }, [])
 
   const { ref, inView } = useInView({
