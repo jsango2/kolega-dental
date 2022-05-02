@@ -15,6 +15,7 @@ import {
 import { Links } from "./links"
 import MobileMenu from "../MobileMenu"
 import { useInView } from "react-intersection-observer"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -58,9 +59,9 @@ const Navbar = () => {
       <LinkWrap>
         {Links.map((e, index) => (
           <SingleLink key={index}>
-            <Link to={e.link} activeStyle={{ color: e.color }}>
+            <AnchorLink to={e.link} activeStyle={{ color: e.color }}>
               {e.veza}
-            </Link>
+            </AnchorLink>
           </SingleLink>
         ))}
       </LinkWrap>

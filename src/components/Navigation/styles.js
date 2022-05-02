@@ -104,6 +104,11 @@ export const Line = styled.div`
 export const SingleLink = styled.div`
   position: relative;
   margin: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aea8b2;
+  margin: 0 0;
+  cursor: pointer;
   a {
     text-transform: uppercase;
     text-decoration: none;

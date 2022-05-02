@@ -51,10 +51,14 @@ export const WrapQuestion = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
-
+  transition: all 0.2s ease-in-out;
+  background-color: ${props => (props.isOpen ? `#32BDE3 !important` : `white`)};
   /* &:nth-child(n) {
     background-color: blue;
   } */
+  .accordionContent {
+    color: black;
+  }
   @media screen and (max-width: 560px) {
     padding: 8px 0;
   }
@@ -89,6 +93,8 @@ export const Question = styled.div`
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
+  color: ${props => (props.isOpen ? `black !important` : ``)};
+  font-weight: ${props => (props.isOpen ? `bold` : ``)};
 
   /* SUNRISE/Coral */
 

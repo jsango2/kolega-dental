@@ -13,9 +13,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 const Accordion = ({ title, content, isOpen, toggle }) => {
   return (
-    <WrapQuestion onClick={toggle} className="accordion">
+    <WrapQuestion onClick={toggle} className="accordion" isOpen={isOpen}>
       <WrapQ>
-        <Question className="accordionTitle">{title}</Question>
+        <Question className="accordionTitle" isOpen={isOpen}>
+          {title}
+        </Question>
         <div style={{ paddingRight: "17px" }}>
           {isOpen ? (
             <div

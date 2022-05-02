@@ -23,7 +23,7 @@ export const TestimonailBox = styled.div`
   padding-left: 30vw;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
   -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
   box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
 
@@ -61,6 +61,10 @@ export const TestimonailBox = styled.div`
   }
   @media screen and (max-width: 440px) {
     box-shadow: unset;
+    .slick-dots {
+      text-align: center !important;
+      margin-left: -30px;
+    }
   }
 `
 export const Rectangle = styled.div`
@@ -134,9 +138,9 @@ export const Naslov = styled.h3`
   /* SUNRISE / White */
   margin-bottom: 15px;
   color: #ffffff;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    text-align: center;
+    margin-left: -50px;
   }
 `
 export const Header = styled.h3`
@@ -184,5 +188,6 @@ export const Text = styled.h4`
   @media screen and (max-width: 500px) {
     width: 88%;
     font-size: 18px;
+    text-align: center;
   }
 `

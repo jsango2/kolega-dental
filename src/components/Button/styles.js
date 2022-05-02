@@ -24,12 +24,17 @@ export const WrapButton = styled.button`
   text-align: left;
   cursor: pointer;
   /* SUNRISE / White */
+  transition: all 0.5s ease-in-out;
   a {
     text-decoration: none;
     color: ${props => props.color};
   }
   &:hover a {
-    color: lightblue;
+    color: inherit;
+  }
+  &:hover {
+    box-shadow: 3px 3px 15px 0px #2088b3;
+    border-radius: 30px;
   }
   @media screen and (max-width: 400px) {
     /* width: 80vw; */

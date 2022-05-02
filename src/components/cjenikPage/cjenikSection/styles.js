@@ -63,6 +63,8 @@ export const Para = styled.p`
   text-align: center;
 
   color: #000000;
+  max-width: 400px;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

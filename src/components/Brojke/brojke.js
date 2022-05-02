@@ -10,7 +10,7 @@ import Brojka from "./brojka.js"
 const Brojke = () => {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.1,
     // trigger inView function only once
     triggerOnce: true,
   })

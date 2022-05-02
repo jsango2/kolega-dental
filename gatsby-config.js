@@ -80,6 +80,12 @@ module.exports = {
         name: `locale`,
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-react-i18next`,
     //   options: {

@@ -13,7 +13,7 @@ const SavjetiSection = () => {
   })
 
   return (
-    <WrapSavjetiSection>
+    <WrapSavjetiSection id="savjeti">
       <Savjeti />
       <WrapImage1 ref={ref} inView={inView}></WrapImage1>
       {/* <WrapImage2>
