@@ -15,7 +15,7 @@ const Cjenik = () => {
     <Layout title="Kolega dental">
       <Seo title="Cjenik" />
       <CjenikHero />
-      {isAction ? <Akcija /> : ""}
+      {/* {isAction ? <Akcija /> : ""} */}
       <SekcijaCjenik />
     </Layout>
   )
