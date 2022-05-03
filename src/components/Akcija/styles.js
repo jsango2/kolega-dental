@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import Zrinka from "../../../content/assets/imageZrinka.png"
 
 export const WrapAkcija = styled.div`
   position: relative;

@@ -9,9 +9,11 @@ export const HeroWrap = styled.div`
   height: 373px;
   background-color: #c4c4c4;
   /* overflow-x: hidden; */
+
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     height: auto;
+    overflow: hidden;
   }
 `
 export const TextBox = styled.div`
@@ -83,9 +85,12 @@ export const WrapSitneTockice = styled.div`
   position: absolute;
   left: 3%;
   top: 90px;
+  transition: all 1.6s ease-in-out;
+  transform: ${props => (props.inView ? `translate(0%)` : `translate(-40%)`)};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    top: unset;
+    bottom: 29%;
   }
 `
 export const WrapSitneTockice2 = styled.div`
@@ -102,6 +107,10 @@ export const WrapCircle = styled.div`
   z-index: 2;
   right: 0%;
   bottom: -30%;
+  transition: all 1.6s ease-in-out 1s;
+  transform: ${props =>
+    props.inView ? `translate(0%, -20%)` : `translate(60%, 60%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -111,6 +120,10 @@ export const WrapCircleMob = styled.div`
   z-index: 1;
   right: 0%;
   bottom: 0%;
+  transition: all 1.6s ease-in-out 1s;
+  transform: ${props =>
+    props.inView ? `translate(0%, 0%)` : `translate(60%, 60%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

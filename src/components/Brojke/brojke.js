@@ -1,5 +1,5 @@
 import React from "react"
-import { Overlay, WrapBrojke, Box, Number, Text, Wrap } from "./styles.js"
+import { Overlay, WrapBrojke, Wrap } from "./styles.js"
 import people from "../../../content/assets/bi_people.svg"
 import clock from "../../../content/assets/cil_clock.svg"
 import calendar from "../../../content/assets/calendar.svg"

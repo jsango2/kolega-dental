@@ -1,9 +1,9 @@
 import React from "react"
-import { Overlay, WrapBrojke, Box, Number, Text, Wrap } from "./styles.js"
-import people from "../../../content/assets/bi_people.svg"
-import clock from "../../../content/assets/cil_clock.svg"
-import calendar from "../../../content/assets/calendar.svg"
-import zub from "../../../content/assets/zub.svg"
+import { Box, Number, Text } from "./styles.js"
+// import people from "../../../content/assets/bi_people.svg"
+// import clock from "../../../content/assets/cil_clock.svg"
+// import calendar from "../../../content/assets/calendar.svg"
+// import zub from "../../../content/assets/zub.svg"
 import { useInView } from "react-intersection-observer"
 
 const Brojka = ({ photo, number, text, delay }) => {

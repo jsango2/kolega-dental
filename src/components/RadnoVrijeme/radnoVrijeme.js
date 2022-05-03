@@ -3,7 +3,6 @@ import {
   WrapRadnoVrijeme,
   Lokacija,
   Button,
-  Adresa,
   WrapMap,
   WrapLogo,
   WrapTockice,

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import EstetskaLista from "../cjenikLista/estetskaLista.js"
 import OpcaLista from "../cjenikLista/opcaLista.js"
 import logo from "../../../../content/assets/cjeniksectionlogo.svg"

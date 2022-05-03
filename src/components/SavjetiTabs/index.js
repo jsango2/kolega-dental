@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { WrapSavjeti, Title, Question, Para } from "./styles.js"
+import { WrapSavjeti, Title } from "./styles.js"
 import { savjetiList } from "./savjetiList"
 import Accordion from "./Accordion.js"
 

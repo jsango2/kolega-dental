@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { OpcaStomatologija } from "./data.js"
 
 import { WrapSekcija, Title, WrapPrice } from "./styles.js"

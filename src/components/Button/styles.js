@@ -36,7 +36,7 @@ export const WrapButton = styled.button`
     box-shadow: 3px 3px 15px 0px #2088b3;
     border-radius: 30px;
   }
-  @media screen and (max-width: 400px) {
-    /* width: 80vw; */
+  @media screen and (max-width: 440px) {
+    font-size: 18px;
   }
 `

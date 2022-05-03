@@ -8,9 +8,6 @@ import {
   SingleLink,
   Hamburger,
   Line,
-  CloseIcon,
-  LineX1,
-  LineX2,
 } from "./styles.js"
 import { Links } from "./links"
 import MobileMenu from "../MobileMenu"

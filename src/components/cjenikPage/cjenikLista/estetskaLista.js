@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { EstetskaMedicina, OpcaStomatologija } from "./data.js"
+import React from "react"
+import { EstetskaMedicina } from "./data.js"
 
 import { WrapSekcija, Title, WrapPrice } from "./styles.js"
 

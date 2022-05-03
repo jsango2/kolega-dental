@@ -2,20 +2,19 @@ import React from "react"
 import { WrapUsluga, Naslov, Text, Photos, Photo } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
-import foto1 from "../../../../content/assets/fotoDobrodosli.png"
-
-import sitnetockice2 from "../../../../content/assets/tockiceOrdinacija1.svg"
-import { Radovi } from "./listaRadova.js"
-
 const Usluga = ({ naslov, text, photo, id }) => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.1,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
   return (
-    <WrapUsluga id={id}>
-      <Naslov>{naslov}</Naslov>
-      <Text>{text}</Text>
-      <Photos>
-        {photo.map(e => (
-          <Photo photo={e} />
-        ))}
+    <WrapUsluga id={id} ref={ref}>
+      <Naslov inView={inView}>{naslov}</Naslov>
+      <Text dangerouslySetInnerHTML={{ __html: text }} inView={inView} />
+      <Photos inView={inView}>
+        {photo && <Photo photo={photo.mediaItemUrl} />}
       </Photos>
     </WrapUsluga>
   )

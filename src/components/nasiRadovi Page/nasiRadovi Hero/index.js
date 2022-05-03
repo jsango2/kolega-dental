@@ -7,22 +7,27 @@ import {
   HeroWrap,
   TextBox,
   PhotoBox,
-  Para,
   Title,
   WrapSitneTockice,
-  WrapSitneTockice2,
   WrapCircle,
   WrapCircleMob,
   WrapButton,
   WrapButtonMob,
 } from "./styles.js"
 import useWindowSize from "../../usewindowsize.js"
+import { useInView } from "react-intersection-observer"
 
 const Hero = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.4,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
   const size = useWindowSize()
   return (
-    <HeroWrap>
-      <WrapSitneTockice>
+    <HeroWrap ref={ref}>
+      <WrapSitneTockice inView={inView}>
         <img src={sitnetockice} alt="little dots" />
       </WrapSitneTockice>
 
@@ -30,7 +35,7 @@ const Hero = () => {
         <Title>Naši radovi</Title>
       </TextBox>
       <PhotoBox>
-        <WrapCircle>
+        <WrapCircle inView={inView}>
           <img src={circle} alt="circle" />
         </WrapCircle>
         {size.width > 768 ? (
@@ -40,6 +45,7 @@ const Hero = () => {
               color="#32BDE3"
               bgColor="#FFFFFF"
               width="341px"
+              linkTo=""
             />
           </WrapButton>
         ) : (
@@ -53,12 +59,13 @@ const Hero = () => {
             color="#32BDE3"
             bgColor="#FFFFFF"
             width="341px"
+            linkTo=""
           />
         </WrapButtonMob>
       ) : (
         ""
       )}
-      <WrapCircleMob>
+      <WrapCircleMob inView={inView}>
         <img src={circle} alt="circle" />
       </WrapCircleMob>
     </HeroWrap>

@@ -1,12 +1,5 @@
-import React, { useState } from "react"
-import {
-  WrapSavjeti,
-  Title,
-  Question,
-  Para,
-  WrapQuestion,
-  WrapQ,
-} from "./styles.js"
+import React from "react"
+import { Question, WrapQuestion, WrapQ } from "./styles.js"
 import arrow from "../../../content/assets/tabarrow.svg"
 import { Collapse } from "reactstrap"
 import "bootstrap/dist/css/bootstrap.min.css"

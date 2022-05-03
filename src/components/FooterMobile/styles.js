@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import bg from "../../../content/assets/fotterbg.png"
 
 export const WrapFooter = styled.div`
   position: relative;

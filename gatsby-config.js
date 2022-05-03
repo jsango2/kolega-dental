@@ -29,6 +29,17 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "WPGraphQL",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "wpgraphql",
+        // Url to query from
+        url: "http://kolegadental.sutra.hr/graphql",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
@@ -83,7 +94,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        // offset: -100,
+        offset: -100,
       },
     },
     // {

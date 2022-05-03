@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import Button from "../Button/Button"
 import { WrapCjenik, WrapButton } from "./styles.js"

@@ -1,8 +1,4 @@
 import styled from "styled-components"
-import foto1 from "../../../../content/assets/fotoDobrodosli.png"
-import foto2 from "../../../../content/assets/zrinkazaposleni.png"
-import foto3 from "../../../../content/assets/jasminka.png"
-import foto4 from "../../../../content/assets/nevena.png"
 
 export const Wrap = styled.div`
   position: relative;
@@ -69,11 +65,15 @@ export const Naslov = styled.h1`
   /* SUNRISE/Coral */
 
   color: #32bde3;
+  transition: all 1.6s ease-in-out;
+  transform: ${props =>
+    props.inView ? `translate(0%, 0%)` : `translate(0%, 40%)`};
+  opacity: ${props => (props.inView ? `1` : `0`)};
   @media screen and (max-width: 1000px) {
-    font-size: 40px;
+    font-size: 38px;
   }
   @media screen and (max-width: 500px) {
-    font-size: 40px;
+    font-size: 36px;
   }
 `
 export const Text = styled.p`
@@ -83,9 +83,10 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 120%;
   /* or 22px */
+  transition: all 1.6s ease-in-out;
 
   text-align: center;
-
+  opacity: ${props => (props.inView ? `1` : `0`)};
   /* SUNRISE / Light Charcoal */
 
   color: #403845;
@@ -95,6 +96,7 @@ export const Text = styled.p`
   @media screen and (max-width: 1000px) {
   }
   @media screen and (max-width: 500px) {
+    font-size: 16px;
   }
 `
 export const Photos = styled.div`

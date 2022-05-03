@@ -1,17 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import {
-  ZaposleniWrap,
-  Dobrodosli,
-  Text,
-  Photo,
-  Zrinka,
-  PhotoZrinka,
-  TextZrinka,
-  Jasminka,
-  PhotoJasminka,
-  PhotoNevena,
-  Nevena,
-} from "./styles.js"
+import { ZaposleniWrap, Dobrodosli, Text, Photo } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
 const Zaposlenik = ({ text, photo, index, left, trans }) => {

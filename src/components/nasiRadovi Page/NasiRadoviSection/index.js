@@ -1,23 +1,20 @@
 import React from "react"
 import { Wrap } from "./styles.js"
-import { useInView } from "react-intersection-observer"
 
-import foto1 from "../../../../content/assets/fotoDobrodosli.png"
-
-import sitnetockice2 from "../../../../content/assets/tockiceOrdinacija1.svg"
 import { Radovi } from "./listaRadova.js"
 import Usluga from "./Usluga.js"
 
-const Section = () => {
+const Section = ({ data }) => {
+  console.log(data)
   return (
     <Wrap>
-      {Radovi.map((rad, index) => (
+      {data.edges.map((rad, index) => (
         <Usluga
           key={index}
-          id={rad.naslov}
-          naslov={rad.naslov}
-          text={rad.text}
-          photo={rad.photo}
+          id={rad.node.title}
+          naslov={rad.node.title}
+          text={rad.node.content}
+          photo={rad.node.naseUslugeFoto.fotoNaseUsluge}
         />
       ))}
     </Wrap>

@@ -3,22 +3,13 @@ import {
   WrapFooter,
   Logo,
   Divider,
-  WrapUp,
-  WrapPratiteNas,
-  WrapPitanja,
   WrapMreze,
-  SubTitle,
-  Title,
-  Line,
   Text,
-  TitleAt,
   PratiteNas,
   WrapLinks,
-  Linkin,
   Bottom,
   WrapIcons,
 } from "./styles.js"
-import blurbg from "../../../content/assets/blurbg.png"
 import facebook from "../../../content/assets/facebook.svg"
 import instagram from "../../../content/assets/instagram.svg"
 import logo from "../../../content/assets/FooterMOBLOGO.svg"

@@ -15,7 +15,6 @@ import {
   Bottom,
   WrapIcons,
 } from "./styles.js"
-import blurbg from "../../../content/assets/blurbg.png"
 import facebook from "../../../content/assets/facebook.svg"
 import instagram from "../../../content/assets/instagram.svg"
 import { Links } from "../Navigation/links.js"

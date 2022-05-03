@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import foto1 from "../../../../content/assets/fotoDobrodosli.png"
 import foto2 from "../../../../content/assets/zrinkazaposleni.png"
 import foto3 from "../../../../content/assets/jasminka.png"
 import foto4 from "../../../../content/assets/nevena.png"

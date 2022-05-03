@@ -11,7 +11,6 @@ import kvadratOrd from "../../../content/assets/kvadratOrdinacija.svg"
 
 import {
   WrapNasaOrdinacija,
-  ParagraphText,
   Title,
   Text,
   ImageWrap,
@@ -21,7 +20,7 @@ import {
 } from "./styles.js"
 const NasaOrdinacija = () => {
   const [current, setCurrent] = useState()
-  const [photoIndex, setPhotoIndex] = useState(0)
+  // const [photoIndex, setPhotoIndex] = useState(0)
 
   const settings = {
     // dots: true,

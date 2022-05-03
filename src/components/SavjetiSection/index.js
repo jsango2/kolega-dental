@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import Savjeti from "../SavjetiTabs/index.js"
-import { WrapSavjetiSection, WrapImage1, WrapImage2 } from "./styles.js"
-import foto2 from "../../../content/assets/savjetiFoto2.png"
+import { WrapSavjetiSection, WrapImage1 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
 const SavjetiSection = () => {

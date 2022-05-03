@@ -12,7 +12,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import {
   WrapNasaOrdinacija,
-  ParagraphText,
   Title,
   Text,
   ImageWrap,
@@ -22,12 +21,12 @@ import {
   Usluge,
   Usluga,
 } from "./styles.js"
-import { Links } from "./links.js"
-import { Link } from "gatsby"
+
 import { Radovi } from "../nasiRadovi Page/NasiRadoviSection/listaRadova.js"
-const NasiRadovi = () => {
+const NasiRadovi = ({ data }) => {
+  console.log(data.edges[0].node.title)
   const [current, setCurrent] = useState()
-  const [photoIndex, setPhotoIndex] = useState(0)
+  // const [photoIndex, setPhotoIndex] = useState(0)
 
   const settings = {
     // dots: true,
@@ -100,10 +99,10 @@ const NasiRadovi = () => {
           nivou i prilagođene induvidualnim potrebama.
         </ParagraphText> */}
         <Usluge>
-          {Radovi.map((e, index) => (
+          {data.edges.map((e, index) => (
             <Usluga key={index}>
-              <AnchorLink to={`/NasiRadovi/#${e.naslov}`}>
-                {e.naslov}
+              <AnchorLink to={`/NasiRadovi/#${e.node.title}`}>
+                {e.node.title}
               </AnchorLink>
             </Usluga>
           ))}

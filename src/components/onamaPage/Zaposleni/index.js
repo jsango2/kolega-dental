@@ -1,6 +1,5 @@
 import React from "react"
 import { ZaposleniWrap, WrapSitneTockice2, WrapSitneTockice } from "./styles.js"
-import { useInView } from "react-intersection-observer"
 import Zaposlenik from "./Zaposlenik.js"
 import foto1 from "../../../../content/assets/fotoDobrodosli.png"
 import foto2 from "../../../../content/assets/zrinkazaposleni.png"

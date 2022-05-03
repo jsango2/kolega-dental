@@ -8,7 +8,6 @@ import {
   Rectangle,
   SaznajVise,
 } from "./styles.js"
-import blurbg from "../../../content/assets/blurbg.png"
 import { useInView } from "react-intersection-observer"
 
 const Tim = () => {
