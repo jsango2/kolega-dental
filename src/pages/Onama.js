@@ -14,7 +14,7 @@ const Onama = () => {
     <Layout title="Kolega dental">
       <Seo title="O nama" />
       <OnamaHero />
-      {isAction ? <Akcija /> : ""}
+      {/* {isAction ? <Akcija /> : ""} */}
       <Zaposleni />
       <Cjenik />
       <NasaOrdinacija />
