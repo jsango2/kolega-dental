@@ -9,6 +9,8 @@ import sitnetockice from "../../../content/assets/tockiceOrdinacija1.svg"
 import sitnetockice2 from "../../../content/assets/tockiceOrdinacija2.svg"
 import kvadratOrd from "../../../content/assets/kvadratOrdinacija.svg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import AnchorLink from "react-anchor-link-smooth-scroll"
+// import { HashLink } from 'react-router-hash-link';
 
 import {
   WrapNasaOrdinacija,
@@ -22,10 +24,9 @@ import {
   Usluga,
 } from "./styles.js"
 
-import { Radovi } from "../nasiRadovi Page/NasiRadoviSection/listaRadova.js"
 const NasiRadovi = ({ data }) => {
-  console.log(data.edges[0].node.title)
-  const [current, setCurrent] = useState()
+  const [current, setCurrent] = useState(0)
+  const [isOpen, setIsOpen] = useState(false)
   // const [photoIndex, setPhotoIndex] = useState(0)
 
   const settings = {
@@ -72,12 +73,14 @@ const NasiRadovi = ({ data }) => {
   const handleClickImage = (e, image) => {
     e && e.preventDefault()
     setCurrent(image)
+    setIsOpen(true)
   }
 
   const handleCloseModal = e => {
     e && e.preventDefault()
 
-    setCurrent()
+    setCurrent(0)
+    setIsOpen(false)
   }
   return (
     <WrapNasaOrdinacija>
@@ -124,7 +127,7 @@ const NasiRadovi = ({ data }) => {
           </ImageWrap>
         ))}
       </Slider>
-      {current && (
+      {isOpen && (
         <Lightbox
           mainSrc={Images[current].photo}
           onCloseRequest={handleCloseModal}

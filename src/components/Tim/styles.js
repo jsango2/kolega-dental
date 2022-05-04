@@ -108,7 +108,7 @@ export const ParagraphText = styled.p`
 
   /* SUNRISE / Light Charcoal */
 
-  color: #403845;
+  color: #37313c;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

@@ -27,7 +27,7 @@ export const WrapUsluga = styled.div`
   background-color: white;
   overflow: hidden;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 1000px) {
     padding-top: 0;
@@ -96,7 +96,7 @@ export const Text = styled.p`
   @media screen and (max-width: 1000px) {
   }
   @media screen and (max-width: 500px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `
 export const Photos = styled.div`

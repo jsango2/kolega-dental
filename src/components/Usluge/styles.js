@@ -14,6 +14,7 @@ export const UslugeWrap = styled.div`
   }
   @media screen and (max-width: 500px) {
     padding-left: 40px;
+    background-color: white;
   }
 `
 export const NaslovUsluge = styled.h1`
@@ -144,8 +145,8 @@ export const WrapCard = styled.div`
   margin: 8px 16px;
   overflow: hidden;
   transition: all 1s ease-out;
-  -webkit-box-shadow: 5px 5px 15px -2px #dceef2;
-  box-shadow: 5px 5px 15px -2px #dceef2;
+  -webkit-box-shadow: 5px 1px 11px -3px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px 1px 11px -3px rgba(0, 0, 0, 0.16);
   transform: ${props =>
     props.inView ? `translate(0px, 0px)` : `translate(0px,70px)`};
   opacity: ${props => (props.inView ? `1` : `0`)};

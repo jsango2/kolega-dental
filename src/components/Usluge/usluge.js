@@ -6,7 +6,7 @@ import UslugeStomatologija from "./uslugeStomatologija.js"
 
 const Usluge = () => {
   return (
-    <UslugeWrap>
+    <UslugeWrap id="usluge">
       <UslugeStomatologija />
       <UslugeEstetika />
     </UslugeWrap>

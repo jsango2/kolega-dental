@@ -35,14 +35,15 @@ const Formular = () => {
         ) : (
           <WrapFormMob>
             <Title>Obratite nam se s povjerenjem</Title>
-            <a href="mailto:hello@kolegadental.com?subject=Kontakt mail">
-              <Button
-                text="POŠALJI UPIT"
-                color="#32BDE3"
-                bgColor="#FFFFFF"
-                width="341px"
-              />
-            </a>
+            {/* <a href="mailto:hello@kolegadental.com?subject=Kontakt mail"> */}
+            <Button
+              text="POŠALJI UPIT"
+              color="#32BDE3"
+              bgColor="#FFFFFF"
+              width="341px"
+              linkTo="/"
+            />
+            {/* </a> */}
           </WrapFormMob>
         )}
       </Form>

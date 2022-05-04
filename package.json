@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@react-hook/intersection-observer": "^3.1.1",
+    "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.2",
     "bootstrap": "^5.1.3",
     "gatsby": "^4.5.4",
@@ -39,6 +40,7 @@
     "rc-collapse": "^3.2.0",
     "react": "^17.0.1",
     "react-accordion-dropdown": "^1.0.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.15.3",

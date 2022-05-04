@@ -1,7 +1,6 @@
 import React from "react"
 import { Wrap } from "./styles.js"
 
-import { Radovi } from "./listaRadova.js"
 import Usluga from "./Usluga.js"
 
 const Section = ({ data }) => {

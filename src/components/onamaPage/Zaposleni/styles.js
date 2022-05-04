@@ -66,6 +66,9 @@ export const Text = styled.div`
     margin: 0 auto;
     padding: 50px 0 20px 0;
   }
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 `
 export const TextZrinka = styled(Text)`
   padding: 50px 120px 0 0px;

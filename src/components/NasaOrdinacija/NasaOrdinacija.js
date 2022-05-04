@@ -20,6 +20,7 @@ import {
 } from "./styles.js"
 const NasaOrdinacija = () => {
   const [current, setCurrent] = useState()
+  const [isOpen, setIsOpen] = useState(false)
   // const [photoIndex, setPhotoIndex] = useState(0)
 
   const settings = {
@@ -66,12 +67,13 @@ const NasaOrdinacija = () => {
   const handleClickImage = (e, image) => {
     e && e.preventDefault()
     setCurrent(image)
+    setIsOpen(true)
   }
 
   const handleCloseModal = e => {
     e && e.preventDefault()
-
-    setCurrent()
+    setIsOpen(false)
+    setCurrent(0)
   }
   return (
     <WrapNasaOrdinacija>
@@ -109,7 +111,7 @@ const NasaOrdinacija = () => {
           </ImageWrap>
         ))}
       </Slider>
-      {current && (
+      {isOpen && (
         <Lightbox
           mainSrc={Images[current].photo}
           onCloseRequest={handleCloseModal}

@@ -1,5 +1,7 @@
 import React from "react"
+import Button from "../../Button/Button.js"
 import sitnetockice from "../../../../content/assets/heroTockice.svg"
+import sitnetockice2 from "../../../../content/assets/Dot.svg"
 import circle from "../../../../content/assets/heroCircle.svg"
 
 import {
@@ -8,56 +10,44 @@ import {
   PhotoBox,
   Title,
   WrapSitneTockice,
+  WrapSitneTockice2,
   WrapCircle,
-  WrapButton,
-  WrapButtonMob,
 } from "./styles.js"
-import Button from "../../Button/Button"
-import useWindowSize from "../../usewindowsize"
+import { useInView } from "react-intersection-observer"
 
-const CjenikHero = () => {
-  const size = useWindowSize()
+const Hero = () => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.5,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
 
   return (
-    <HeroWrap>
-      <WrapSitneTockice>
+    <HeroWrap ref={ref}>
+      <WrapCircle inView={inView}>
+        <img src={circle} alt="circle" />
+      </WrapCircle>
+      <WrapSitneTockice inView={inView}>
         <img src={sitnetockice} alt="little dots" />
       </WrapSitneTockice>
-
+      <WrapSitneTockice2 inView={inView}>
+        <img src={sitnetockice2} alt="little dots 2" />
+      </WrapSitneTockice2>
       <TextBox>
         <Title>Cjenik</Title>
+
+        <Button
+          text="DOGOVORI SVOJ TERMIN"
+          color="#32BDE3"
+          bgColor="#FFFFFF"
+          width="341px"
+          linkTo="/"
+        />
       </TextBox>
-      <PhotoBox>
-        <WrapCircle>
-          <img src={circle} alt="circle" />
-        </WrapCircle>
-        {size.width > 768 ? (
-          <WrapButton>
-            <Button
-              text="DOGOVORI SVOJ TERMIN"
-              color="#32BDE3"
-              bgColor="#FFFFFF"
-              width="341px"
-            />
-          </WrapButton>
-        ) : (
-          ""
-        )}
-      </PhotoBox>
-      {size.width < 768 ? (
-        <WrapButtonMob>
-          <Button
-            text="DOGOVORI SVOJ TERMIN"
-            color="#32BDE3"
-            bgColor="#FFFFFF"
-            width="341px"
-          />
-        </WrapButtonMob>
-      ) : (
-        ""
-      )}
+      <PhotoBox></PhotoBox>
     </HeroWrap>
   )
 }
 
-export default CjenikHero
+export default Hero

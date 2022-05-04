@@ -8,7 +8,7 @@ import p7 from "../../../content/assets/radovi7.png"
 import p8 from "../../../content/assets/radovi8.png"
 
 const Images = [
-  { photo: p1, in: "0" },
+  { photo: p1, in: 0 },
   { photo: p2, in: 1 },
   { photo: p3, in: 2 },
   { photo: p4, in: 3 },
