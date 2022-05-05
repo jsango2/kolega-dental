@@ -9,7 +9,7 @@ export const Wrap = styled.div`
   height: auto;
   background-color: white;
   overflow: hidden;
-  padding-top: 170px;
+  padding-top: 100px;
   padding-bottom: 100px;
 
   @media screen and (max-width: 1000px) {

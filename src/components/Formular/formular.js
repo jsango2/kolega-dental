@@ -26,7 +26,12 @@ const Formular = () => {
       <Rectangle inView={inView} />
       <Form inView={inView}>
         {size.width > 440 ? (
-          <form>
+          <form
+            name="kontakt forma"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            hidden
+          >
             <input type="text" name="Ime" placeholder="Ime" />
             <input type="email" name="Email" placeholder="Email" />
             <textarea name="Text" rows="5" cols="33" placeholder="Poruka" />

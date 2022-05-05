@@ -190,8 +190,8 @@ export const ButtonMail = styled.a`
   text-decoration: none;
   color: ${props => props.color};
 
-  &:hover a {
-    color: inherit;
+  &:hover {
+    color: #2691ae;
   }
   &:hover {
     box-shadow: 3px 3px 15px 0px #2088b3;
