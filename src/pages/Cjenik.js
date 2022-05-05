@@ -17,10 +17,57 @@ const Cjenik = ({ data }) => {
     <Layout title="Kolega dental">
       <Seo title="Cjenik" />
       <CjenikHero />
-      {isAction ? <Akcija /> : ""}
+      {isAction ? (
+        <Akcija data={data.wpgraphql.pages.edges[0].node.akcija} />
+      ) : (
+        ""
+      )}
       <SekcijaCjenik />
     </Layout>
   )
 }
 
 export default Cjenik
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    wpgraphql {
+      naseUsluga {
+        edges {
+          node {
+            id
+            title
+            content
+            naseUslugeFoto {
+              fotoNaseUsluge {
+                mediaItemUrl
+              }
+            }
+          }
+        }
+      }
+      pages {
+        edges {
+          node {
+            contentType {
+              node {
+                id
+              }
+            }
+            akcija {
+              akcija {
+                naslov
+                tekst
+              }
+              prikaz
+            }
+          }
+        }
+      }
+    }
+  }
+`

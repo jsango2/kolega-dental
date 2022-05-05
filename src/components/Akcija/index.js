@@ -3,6 +3,7 @@ import { WrapAkcija, WrapTockice, Naslov, Paragraf, Linija } from "./styles.js"
 import tockice from "../../../content/assets/tockiceAkcija.svg"
 
 const Akcija = ({ data }) => {
+  console.log(data)
   return (
     <WrapAkcija>
       <WrapTockice>

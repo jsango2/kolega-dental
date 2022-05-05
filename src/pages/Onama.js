@@ -19,7 +19,11 @@ const Onama = ({ data }) => {
     <Layout title="Kolega dental">
       <Seo title="O nama" />
       <OnamaHero />
-      {isAction ? <Akcija /> : ""}
+      {isAction ? (
+        <Akcija data={data.wpgraphql.pages.edges[0].node.akcija} />
+      ) : (
+        ""
+      )}
       <Zaposleni />
       <Cjenik />
       <NasaOrdinacija />
@@ -36,20 +40,6 @@ export const pageQuery = graphql`
       }
     }
     wpgraphql {
-      naseUsluga {
-        edges {
-          node {
-            id
-            title
-            content
-            naseUslugeFoto {
-              fotoNaseUsluge {
-                mediaItemUrl
-              }
-            }
-          }
-        }
-      }
       pages {
         edges {
           node {
@@ -64,6 +54,18 @@ export const pageQuery = graphql`
                 tekst
               }
               prikaz
+            }
+          }
+        }
+      }
+      naseUsluga {
+        edges {
+          node {
+            id
+            naseUslugeFoto {
+              fotoNaseUsluge {
+                mediaItemUrl
+              }
             }
           }
         }

@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
@@ -7,12 +8,22 @@ import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import Hero from "../components/nasiRadovi Page/nasiRadovi Hero"
 import Section from "../components/nasiRadovi Page/NasiRadoviSection"
+import Akcija from "../components/Akcija"
 
 const NasiRadovi = ({ data }) => {
+  const [isAction, setIsAction] = useState(false)
+  useEffect(() => {
+    setIsAction(data.wpgraphql.pages.edges[0].node.akcija.prikaz)
+  }, [])
   return (
     <Layout title="Kolega dental">
       <Seo title="Naši radovi" />
       <Hero />
+      {isAction ? (
+        <Akcija data={data.wpgraphql.pages.edges[0].node.akcija} />
+      ) : (
+        ""
+      )}
       <Section data={data.wpgraphql.naseUsluga} />
     </Layout>
   )
@@ -28,12 +39,28 @@ export const pageQuery = graphql`
       }
     }
     wpgraphql {
+      pages {
+        edges {
+          node {
+            contentType {
+              node {
+                id
+              }
+            }
+            akcija {
+              akcija {
+                naslov
+                tekst
+              }
+              prikaz
+            }
+          }
+        }
+      }
       naseUsluga {
         edges {
           node {
             id
-            title
-            content
             naseUslugeFoto {
               fotoNaseUsluge {
                 mediaItemUrl
