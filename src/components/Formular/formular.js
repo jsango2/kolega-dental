@@ -24,12 +24,23 @@ const Formular = () => {
     <WrapFormSection ref={ref}>
       <Photo inView={inView} />
       <Rectangle inView={inView} />
-
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
+      <form
+        name="contact"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        hidden
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="ime" />
         <input type="email" name="email" />
-        <textarea name="message"></textarea>
+        <input type="text" name="imeObjekta" />
+        <input type="tel" name="brojTelefona" />
+        <input type="text" name="mjesto" />
+        <input type="text" name="sustav" />
+        <input type="number" name="brojJedinica" />
+        {/* <input type="checkbox" name="recieveNewsletter" /> */}
       </form>
+
       <Form inView={inView}>
         {size.width > 440 ? (
           <form
