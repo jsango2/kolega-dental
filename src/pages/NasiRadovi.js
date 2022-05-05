@@ -66,6 +66,8 @@ export const pageQuery = graphql`
                 mediaItemUrl
               }
             }
+            content
+            title
           }
         }
       }
