@@ -27,11 +27,14 @@ const Formular = () => {
       <Form inView={inView}>
         {size.width > 440 ? (
           <form
-            name="kontakt forma"
+            name="contact"
+            method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            hidden
+            action="/success"
           >
+            <input type="hidden" name="form-name" value="contact" />
+
             <input type="text" name="Ime" placeholder="Ime" />
             <input type="email" name="Email" placeholder="Email" />
             <textarea name="Text" rows="5" cols="33" placeholder="Poruka" />
