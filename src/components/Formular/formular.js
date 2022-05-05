@@ -29,6 +29,7 @@ const Formular = () => {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        action="/success"
         hidden
       >
         <input type="hidden" name="contact forma" value="contact forma" />
