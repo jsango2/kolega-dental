@@ -90,39 +90,40 @@ export const WrapFormMob = styled.div`
   }
 `
 export const Form = styled.form`
-  position: absolute;
-  z-index: 6;
-  right: 70px;
-  top: 160px;
-  width: 627px;
-  height: 713px;
-  background: #32bde3;
-  border-radius: 38px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 69px;
-  -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  transition: all 1.6s ease-in-out;
-  transform: ${props => (props.inView ? `translate(0%)` : `translate(50%)`)};
-  opacity: ${props => (props.inView ? `1` : `0`)};
-  @media screen and (max-width: 1000px) {
-    top: 60px;
+  & form {
+    position: absolute;
+    z-index: 6;
+    right: 70px;
+    top: 160px;
+    width: 627px;
+    height: 713px;
+    background: #32bde3;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 69px;
+    -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+    box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
+    transition: all 1.6s ease-in-out;
+    transform: ${props => (props.inView ? `translate(0%)` : `translate(50%)`)};
+    opacity: ${props => (props.inView ? `1` : `0`)};
+    @media screen and (max-width: 1000px) {
+      top: 60px;
 
-    position: relative;
-    width: 500px;
-    right: auto;
-    margin: 0 auto;
+      position: relative;
+      width: 500px;
+      right: auto;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+
+      top: 0;
+    }
   }
-  @media screen and (max-width: 500px) {
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-
-    top: 0;
-  }
-
   & input {
     height: 56px;
     border: none;
