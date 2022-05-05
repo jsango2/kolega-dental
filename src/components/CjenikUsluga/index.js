@@ -1,11 +1,11 @@
 import React from "react"
 import Button from "../Button/Button"
-import { WrapCjenik, WrapButton } from "./styles.js"
+import { WrapCjenik, WrapButtonOut } from "./styles.js"
 
 const Cjenik = () => {
   return (
     <WrapCjenik>
-      <WrapButton>
+      <WrapButtonOut>
         <Button
           text="CJENIK NAŠIH USLUGA"
           color="#fff"
@@ -13,7 +13,7 @@ const Cjenik = () => {
           width="315px"
           linkTo="/Cjenik"
         />
-      </WrapButton>
+      </WrapButtonOut>
     </WrapCjenik>
   )
 }

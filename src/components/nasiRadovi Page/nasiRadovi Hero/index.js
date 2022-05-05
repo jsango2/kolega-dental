@@ -16,6 +16,7 @@ import {
 } from "./styles.js"
 import useWindowSize from "../../usewindowsize.js"
 import { useInView } from "react-intersection-observer"
+import { ButtonMail } from "../../Hero/styles.js"
 
 const Hero = () => {
   const { ref, inView } = useInView({
@@ -40,13 +41,16 @@ const Hero = () => {
         </WrapCircle>
         {size.width > 768 ? (
           <WrapButton>
-            <Button
+            <ButtonMail
               text="DOGOVORI SVOJ TERMIN"
               color="#32BDE3"
               bgColor="#FFFFFF"
               width="341px"
-              linkTo=""
-            />
+              linkTo="/"
+              href="mailto:hello@kolegadental.com?subject=Kontakt mail"
+            >
+              DOGOVORI SVOJ TERMIN
+            </ButtonMail>
           </WrapButton>
         ) : (
           ""
@@ -54,13 +58,16 @@ const Hero = () => {
       </PhotoBox>
       {size.width < 768 ? (
         <WrapButtonMob>
-          <Button
+          <ButtonMail
             text="DOGOVORI SVOJ TERMIN"
             color="#32BDE3"
             bgColor="#FFFFFF"
             width="341px"
-            linkTo=""
-          />
+            linkTo="/"
+            href="mailto:hello@kolegadental.com?subject=Kontakt mail"
+          >
+            DOGOVORI SVOJ TERMIN
+          </ButtonMail>
         </WrapButtonMob>
       ) : (
         ""

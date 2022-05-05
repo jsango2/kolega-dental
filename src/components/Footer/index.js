@@ -22,7 +22,7 @@ import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <WrapFooter>
+    <WrapFooter id="kontakt">
       <WrapUp>
         <WrapPratiteNas>
           <SubTitle>PRATITE NAS</SubTitle>
@@ -79,7 +79,14 @@ const Footer = () => {
           <li>© 2022 KOLEGA DENTAL · </li>
           <li>Uvjeti korištenja · </li>
           <li>Izjava o privatnosti · </li>
-          <li>Web design SUTRA</li>
+          <li>
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="http://www.sutra.hr"
+            >
+              Web design SUTRA
+            </a>{" "}
+          </li>
         </ul>
       </Bottom>
     </WrapFooter>

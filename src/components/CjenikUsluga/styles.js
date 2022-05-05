@@ -95,7 +95,7 @@ export const TestimonialLogo = styled.div`
     margin-bottom: 1rem; */
   }
 `
-export const WrapButton = styled.div`
+export const WrapButtonOut = styled.div`
   position: relative;
   top: 150px;
   @media screen and (max-width: 768px) {

@@ -13,6 +13,7 @@ import {
   WrapSitneTockice,
   WrapSitneTockice2,
   WrapCircle,
+  ButtonMail,
 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
@@ -43,13 +44,14 @@ const Hero = () => {
           kada godinama niste posjetili stomatologa. Zajedno možemo postići da
           budete napokon zadovoljni svojim osmjehom.{" "}
         </Para>
-        <Button
-          text="DOGOVORI SVOJ TERMIN"
+        <ButtonMail
+          href="mailto:hello@kolegadental.com?subject=Kontakt mail"
           color="#32BDE3"
           bgColor="#FFFFFF"
           width="341px"
-          linkTo="/"
-        />
+        >
+          DOGOVORI SVOJ TERMIN
+        </ButtonMail>
       </TextBox>
       <PhotoBox></PhotoBox>
     </HeroWrap>

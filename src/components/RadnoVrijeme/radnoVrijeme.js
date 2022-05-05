@@ -7,6 +7,7 @@ import {
   WrapLogo,
   WrapTockice,
   WrapSitneTockice,
+  ButtonDirection,
 } from "./styles.js"
 import Timetable from "./timetable.js"
 import arrow from "../../../content/assets/arrow.svg"
@@ -28,11 +29,10 @@ const RadnoVrijeme = () => {
       {" "}
       <Timetable />
       <Lokacija>
-        <Button>
+        <Button href="https://goo.gl/maps/hD9PnHdezL3PZGHW9">
           Upute Google Maps
           <img src={arrow} alt="arrow" />
         </Button>
-        {/* <Adresa>Put Murvice 12c (kod Mirovinskog)</Adresa> */}
       </Lokacija>
       <WrapMap ref={ref} inView={inView}>
         <iframe

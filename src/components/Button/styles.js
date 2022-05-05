@@ -20,7 +20,7 @@ export const WrapButton = styled.button`
   font-size: 21px;
   line-height: 120%;
   /* or 25px */
-  z-index: 2;
+  z-index: 10;
   text-align: left;
   cursor: pointer;
   /* SUNRISE / White */

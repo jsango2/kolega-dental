@@ -15,6 +15,7 @@ import {
   WrapButtonMob,
 } from "./styles.js"
 import useWindowSize from "../../usewindowsize.js"
+import { ButtonMail } from "../../Hero/styles.js"
 
 const Zaposleni = () => {
   const size = useWindowSize()
@@ -33,12 +34,15 @@ const Zaposleni = () => {
         </WrapCircle>
         {size.width > 768 ? (
           <WrapButton>
-            <Button
+            <ButtonMail
+              href="mailto:hello@kolegadental.com?subject=Kontakt mail"
               text="DOGOVORI SVOJ TERMIN"
               color="#32BDE3"
               bgColor="#FFFFFF"
               width="341px"
-            />
+            >
+              DOGOVORI SVOJ TERMIN
+            </ButtonMail>
           </WrapButton>
         ) : (
           ""
@@ -46,12 +50,15 @@ const Zaposleni = () => {
       </PhotoBox>
       {size.width < 768 ? (
         <WrapButtonMob>
-          <Button
+          <ButtonMail
+            href="mailto:hello@kolegadental.com?subject=Kontakt mail"
             text="DOGOVORI SVOJ TERMIN"
             color="#32BDE3"
             bgColor="#FFFFFF"
             width="341px"
-          />
+          >
+            DOGOVORI SVOJ TERMIN
+          </ButtonMail>
         </WrapButtonMob>
       ) : (
         ""

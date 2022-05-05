@@ -14,6 +14,7 @@ import {
   WrapCircle,
 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
+import { ButtonMail } from "../../Hero/styles.js"
 
 const Hero = () => {
   const { ref, inView } = useInView({
@@ -37,13 +38,16 @@ const Hero = () => {
       <TextBox>
         <Title>Cjenik</Title>
 
-        <Button
+        <ButtonMail
           text="DOGOVORI SVOJ TERMIN"
           color="#32BDE3"
           bgColor="#FFFFFF"
           width="341px"
           linkTo="/"
-        />
+          href="mailto:hello@kolegadental.com?subject=Kontakt mail"
+        >
+          DOGOVORI SVOJ TERMIN
+        </ButtonMail>
       </TextBox>
       <PhotoBox></PhotoBox>
     </HeroWrap>

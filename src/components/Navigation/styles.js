@@ -116,6 +116,9 @@ export const SingleLink = styled.div`
     margin: 0 0;
     cursor: pointer;
   }
+  a:hover {
+    color: #6d6a70;
+  }
 
   @media screen and (max-width: 768px) {
     /* order: 1;
