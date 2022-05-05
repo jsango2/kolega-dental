@@ -24,6 +24,12 @@ const Formular = () => {
     <WrapFormSection ref={ref}>
       <Photo inView={inView} />
       <Rectangle inView={inView} />
+
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
       <Form inView={inView}>
         {size.width > 440 ? (
           <form
@@ -31,8 +37,6 @@ const Formular = () => {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            action="/success"
-            netlify
           >
             <input type="hidden" name="form-name" value="contact" />
 
