@@ -24,7 +24,7 @@ const Formular = () => {
     <WrapFormSection ref={ref}>
       <Photo inView={inView} />
       <Rectangle inView={inView} />
-      <form
+      {/* <form
         name="contact"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -38,8 +38,7 @@ const Formular = () => {
         <input type="text" name="mjesto" />
         <input type="text" name="sustav" />
         <input type="number" name="brojJedinica" />
-        {/* <input type="checkbox" name="recieveNewsletter" /> */}
-      </form>
+      </form> */}
 
       <Form inView={inView}>
         {size.width > 440 ? (
