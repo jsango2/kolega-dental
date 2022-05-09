@@ -49,7 +49,7 @@ export const PhotoBox = styled.div`
   overflow: hidden;
   @media screen and (max-width: 768px) {
     width: 100%;
-    height: 70vw;
+    height: 61vw;
     margin: 0;
     border-radius: 0;
   }

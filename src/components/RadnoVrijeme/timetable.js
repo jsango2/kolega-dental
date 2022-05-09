@@ -28,35 +28,35 @@ const Timetable = () => {
             <Dan>Ponedjeljak</Dan>
             <Crta />
           </WrapDanCrta>
-          <Sat>09:00 - 17:00</Sat>
+          <Sat>13:00 - 20:30</Sat>
         </DnevniRaspored>
         <DnevniRaspored>
           <WrapDanCrta>
             <Dan>Utorak</Dan>
             <Crta />
           </WrapDanCrta>
-          <Sat>09:00 - 17:00</Sat>
+          <Sat>07:00 - 14:30</Sat>
         </DnevniRaspored>
         <DnevniRaspored>
           <WrapDanCrta>
             <Dan>Srijeda</Dan>
             <Crta />
           </WrapDanCrta>
-          <Sat>09:00 - 17:00</Sat>
+          <Sat>13:00 - 20:30</Sat>
         </DnevniRaspored>
         <DnevniRaspored>
           <WrapDanCrta>
             <Dan>Četvrtak</Dan>
             <Crta />
           </WrapDanCrta>
-          <Sat>09:00 - 17:00</Sat>
+          <Sat>07:00 - 14:30</Sat>
         </DnevniRaspored>
         <DnevniRaspored>
           <WrapDanCrta>
             <Dan>Petak</Dan>
             <Crta />
           </WrapDanCrta>
-          <Sat>09:00 - 17:00</Sat>
+          <Sat>07:00 - 14:30</Sat>
         </DnevniRaspored>
         <DnevniRaspored>
           <WrapDanCrta>

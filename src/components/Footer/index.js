@@ -52,6 +52,8 @@ const Footer = () => {
             Pon., Sri. 13:00 - 20:30
             <br />
             Uto., Čet., Pet. 07:00 - 14:30
+            <br />
+            Sub., Ned. po dogovoru
           </Text>
         </WrapPitanja>
         <WrapMreze>
