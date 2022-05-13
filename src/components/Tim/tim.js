@@ -9,6 +9,7 @@ import {
   SaznajVise,
 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
+import { Link } from "gatsby"
 
 const Tim = () => {
   const { ref, inView } = useInView({
@@ -39,7 +40,9 @@ const Tim = () => {
           održavanju oralne higijene kako bi u buduće imali što zdraviji i
           ljepši osmijeh.
         </ParagraphText>
-        <SaznajVise>SAZNAJ VIŠE</SaznajVise>
+        <SaznajVise>
+          <Link to="/Onama">SAZNAJ VIŠE</Link>
+        </SaznajVise>
       </WrapText>
     </WrapTim>
   )

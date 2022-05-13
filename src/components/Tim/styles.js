@@ -125,6 +125,10 @@ export const SaznajVise = styled.p`
   /* SUNRISE/Coral */
   cursor: pointer;
   color: #32bde3;
+  a {
+    text-decoration: none;
+    color: #32bde3;
+  }
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
