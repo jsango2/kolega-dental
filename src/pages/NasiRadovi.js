@@ -57,7 +57,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      naseUsluga {
+      naseUsluga(first: 15) {
         edges {
           node {
             id

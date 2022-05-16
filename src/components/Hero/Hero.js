@@ -39,10 +39,10 @@ const Hero = () => {
       <TextBox>
         <Title>Usluge dentalne i estetske medicine</Title>
         <Para>
-          Ordinacija dentalne i estetske medicine Kolega Dental je tu za vas u
-          svim situacijama: ako vas boli zub ili želite uljepšati osmjeh, čak i
-          kada godinama niste posjetili stomatologa. Zajedno možemo postići da
-          budete napokon zadovoljni svojim osmjehom.{" "}
+          Ordinacija dentalne i estetske medicine dr. Zrinka Kolega je tu za vas
+          u svim situacijama: ako vas boli zub ili želite uljepšati osmijeh, čak
+          i kada godinama niste posjetili stomatologa. Zajedno možemo postići da
+          budete napokon zadovoljni svojim osmijehom.
         </Para>
         <ButtonMail
           href="mailto:hello@kolegadental.com?subject=Kontakt mail"

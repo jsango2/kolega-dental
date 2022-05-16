@@ -46,21 +46,25 @@ const UslugeEstetika = () => {
           photo={p2}
           title="Botox"
           text="Brisanje bora čela i smanjivanje pušačkih bora i bora oko očiju"
+          link="Botox"
         />
         <UslugaCard
           photo={p3}
           title="Hijaluronski fileri"
           text="Minimalno invazivni tretmani kože i povećanje usana"
+          link="Hijaluron"
         />
         <UslugaCard
           photo={p4}
           title="PRP"
           text="Plazma tretmani za pomlađivanje kože i pooljšanje gustoće kose"
+          link="PRP tretman"
         />
         <UslugaCard
           photo={p5}
           title="Mezoterapija"
           text="Neumreženi hijaluron u terapiji raznih oštećenja kože i pomlađivanje"
+          link="Mezoterapija"
         />
         <Rectangle3 />
       </Usluge>

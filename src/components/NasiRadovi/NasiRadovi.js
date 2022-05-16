@@ -28,7 +28,6 @@ const NasiRadovi = ({ data }) => {
   const [current, setCurrent] = useState(0)
   const [isOpen, setIsOpen] = useState(false)
   // const [photoIndex, setPhotoIndex] = useState(0)
-
   const settings = {
     // dots: true,
     infinite: true,

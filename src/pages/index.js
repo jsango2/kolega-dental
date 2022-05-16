@@ -35,7 +35,6 @@ const BlogIndex = ({ data }) => {
       .then(response => response.json())
       .then(data => setDetails(data))
   }, [])
-  console.log(details)
   return (
     <Layout title={siteTitle}>
       <Seo title="Početna stranica" />
@@ -71,7 +70,7 @@ export const pageQuery = graphql`
       }
     }
     wpgraphql {
-      naseUsluga {
+      naseUsluga(first: 15) {
         edges {
           node {
             id

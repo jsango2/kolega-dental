@@ -4,7 +4,6 @@ import { Wrap } from "./styles.js"
 import Usluga from "./Usluga.js"
 
 const Section = ({ data }) => {
-  console.log(data)
   return (
     <Wrap>
       {data.edges.map((rad, index) => (

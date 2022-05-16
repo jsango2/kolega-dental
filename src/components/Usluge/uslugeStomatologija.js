@@ -47,6 +47,7 @@ const UslugeStomatologija = () => {
           photo={p1}
           title="Estetska stomatologija"
           text="Digital smile design, CAM/CAD tehnologija"
+          link="Restorativna i estetska stomatologija"
         />
         <UslugaCard
           photo={p2}
@@ -57,6 +58,7 @@ const UslugeStomatologija = () => {
           photo={p3}
           title="Protetika"
           text="Ljuskice, krunice, mostovi, mobilna protetika"
+          link="Protetika"
         />
         <UslugaCard
           photo={p4}
@@ -67,16 +69,19 @@ const UslugeStomatologija = () => {
           photo={p5}
           title="Oralna kirurgija"
           text="Vađenja zubi i implantati uz suradnju oralnog kirurga"
+          link="Oralna kirurgija i implantoprotetika"
         />
         <UslugaCard
           photo={p6}
           title="Paradontologija"
           text="Održavanje zdravlja potpornih struktura zuba,liječenje desni i čišćenje kamenca i pjeskarenje"
+          link="Paradontologija"
         />
         <UslugaCard
           photo={p7}
           title="Endodoncija"
           text="Liječenje zubne pulpe i opskrba kanala, ručno ili strojnom tehnikom"
+          link="Endodoncija"
         />
         <UslugaCard
           photo={p8}

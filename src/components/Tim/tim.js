@@ -34,7 +34,8 @@ const Tim = () => {
           baš zato se trudimo biti izrazito pažljivi i nježni u pristupu. Sa
           preko 25 godina iskustva u brizi za zdravlje čitave obitelji i
           maksimalno poštivanje zakazanih termina, riješite svoje probleme na
-          obostrano zadovoljstvo. <br />
+          obostrano zadovoljstvo.
+          <br />
           <br />
           Veliku važnost pridajemo preventivi te Vas zato neumorno educiramo u
           održavanju oralne higijene kako bi u buduće imali što zdraviji i

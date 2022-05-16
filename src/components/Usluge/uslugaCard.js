@@ -7,8 +7,9 @@ import {
   WrapPhoto,
 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-const UslugaCard = ({ photo, text, title }) => {
+const UslugaCard = ({ photo, text, title, link }) => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.3,
@@ -18,10 +19,19 @@ const UslugaCard = ({ photo, text, title }) => {
   return (
     <WrapCard ref={ref} inView={inView}>
       <WrapPhoto photo={photo}></WrapPhoto>
-      <WrapTitleText>
-        <CardTitle>{title}</CardTitle>
-        <CardText>{text}</CardText>
-      </WrapTitleText>
+      {link ? (
+        <AnchorLink to={`/NasiRadovi/#${link}`}>
+          <WrapTitleText>
+            <CardTitle>{title}</CardTitle>
+            <CardText>{text}</CardText>
+          </WrapTitleText>
+        </AnchorLink>
+      ) : (
+        <WrapTitleText>
+          <CardTitle>{title}</CardTitle>
+          <CardText>{text}</CardText>
+        </WrapTitleText>
+      )}
     </WrapCard>
   )
 }

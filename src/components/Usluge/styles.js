@@ -144,12 +144,19 @@ export const WrapCard = styled.div`
   border-radius: 20px;
   margin: 8px 16px;
   overflow: hidden;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
   -webkit-box-shadow: 5px 1px 11px -3px rgba(0, 0, 0, 0.16);
   box-shadow: 5px 1px 11px -3px rgba(0, 0, 0, 0.16);
   transform: ${props =>
     props.inView ? `translate(0px, 0px)` : `translate(0px,70px)`};
   opacity: ${props => (props.inView ? `1` : `0`)};
+  &:hover {
+    background-color: #32bde3;
+  }
+  cursor: pointer;
+  a {
+    text-decoration: none;
+  }
   @media screen and (max-width: 1000px) {
     width: 83%;
     margin: 8px auto;
@@ -171,6 +178,7 @@ export const WrapTitleText = styled.div`
 `
 export const WrapPhoto = styled.div`
   width: 40%;
+  min-width: 40%;
   height: 100%;
   padding: 23px 35px 0 11px;
   background: url(${props => props.photo}) no-repeat center;

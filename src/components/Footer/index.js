@@ -29,10 +29,10 @@ const Footer = () => {
           <Title>KOLEGA DENTAL</Title>
           <Line />
           <Text>
-            Ordinacija dentalne i estetske medicine Kolega Dental je tu za vas u
-            svim situacijama. Ako vas boli zub ili želite uljepšati osmjeh, čak
-            i kada godinama niste posjetili stomatologa. Zajedno možemo postići
-            da budete napokon zadovoljni svojim osmjehom.{" "}
+            Ordinacija dentalne i estetske medicine dr. Zrinka Kolega je tu za
+            vas u svim situacijama: ako vas boli zub ili želite uljepšati
+            osmijeh, čak i kada godinama niste posjetili stomatologa. Zajedno
+            možemo postići da budete napokon zadovoljni svojim osmijehom.
           </Text>
         </WrapPratiteNas>
         <WrapPitanja>

@@ -27,7 +27,7 @@ export const testimonialList = [
   {
     ime: "Nataša Butić",
     testimonial:
-      "Brzo,efikasno i uslužno. Izuzetno ljubazno osoblje,ugodna atmosfera,divan interijer. Dolaskom u ordinaciju strah od posjete zubaru u potpunosti nestaje.",
+      "Brzo,efikasno i uslužno. Izuzetno ljubazno osoblje,ugodna atmosfera,divan interijer. Dolaskom u ordinaciju strah od posjete stomatologu u potpunosti nestaje.",
   },
   {
     ime: "Lara Kajmak",
