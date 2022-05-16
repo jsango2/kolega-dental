@@ -8,7 +8,7 @@ module.exports = {
     },
     description: `Kolega Dental`,
     siteUrl: `https://localhost:8003/`,
-    image: `/ogimage.png`,
+    image: `/ogimage2.png`,
     social: {
       twitter: `Kolega Dental`,
     },
