@@ -11,7 +11,7 @@ export const WrapFooter = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 128px 0 100px 0;
+  padding: 127px 0 100px 0;
 
   @media screen and (max-width: 768px) {
     /* order: 1;
