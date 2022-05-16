@@ -35,11 +35,11 @@ const UslugeStomatologija = () => {
         Naše usluge / opća stomatologija
       </NaslovUsluge>
       <ParagraphText inView={inView}>
-        Vjerujemo da je glavni preduvjet za uspiješan posjet zubaru razvijanje
-        uzajamnog povjerenja između lječnika i pacijenta. Naš fokus je na
-        edukaciji o oralnom zdravlju i osobnom pristupu svakom pacijentu.
+        Vjerujemo da je glavni preduvjet za uspješan posjet stomatologu
+        razvijanje uzajamnog povjerenja između liječnika i pacijenta. Naš fokus
+        je na edukaciji o oralnom zdravlju i osobnom pristupu svakom pacijentu.
         Ostvarujemo odlične rezultate u radu s djecom, gdje je edukacija i
-        izgradnja odnosa povjerenja sa stomatologom pravi zalog za budućnost.
+        izgradnja odnosa povjerenja pravi zalog za budućnost.
       </ParagraphText>
       <Rectangle />
       <Usluge>
@@ -74,7 +74,7 @@ const UslugeStomatologija = () => {
         <UslugaCard
           photo={p6}
           title="Paradontologija"
-          text="Održavanje zdravlja potpornih struktura zuba,liječenje desni i čišćenje kamenca i pjeskarenje"
+          text="Održavanje zdravlja potpornih struktura zuba,liječenje desni i čišćenje kamenca te pjeskarenje"
           link="Paradontologija"
         />
         <UslugaCard

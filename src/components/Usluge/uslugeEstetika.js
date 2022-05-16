@@ -32,9 +32,9 @@ const UslugeEstetika = () => {
       <Rectangle2 />
       <ParagraphText>
         Kolega Dental & Aesthetic medicine više od pet godina nudi usluge
-        neinvazivne estetske medicine poput injekcijski dermalni fileri, botox i
-        terapija krvnom plazmom (PRP). Usluge su na visokom profesionalnom nivou
-        i prilagođene induvidualnim potrebama.
+        neinvazivne estetske medicine poput injekcijskih dermalnih filera,
+        botoxa i terapija krvnom plazmom (PRP). Usluge su na visokom
+        profesionalnom nivou i prilagođene induvidualnim potrebama.
       </ParagraphText>
       <Usluge>
         <UslugaCard
@@ -45,7 +45,7 @@ const UslugeEstetika = () => {
         <UslugaCard
           photo={p2}
           title="Botox"
-          text="Brisanje bora čela i smanjivanje pušačkih bora i bora oko očiju"
+          text="Brisanje bora čela, smanjivanje pušačkih bora i bora oko očiju"
           link="Botox"
         />
         <UslugaCard

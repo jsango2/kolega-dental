@@ -33,7 +33,7 @@ const Brojke = () => {
         />
         <Brojka
           photo={calendar}
-          number="25"
+          number="25+"
           text="Godina iskustva"
           delay={0.9}
         />
