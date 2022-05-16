@@ -37,7 +37,12 @@ const BlogIndex = ({ data }) => {
   }, [])
   return (
     <Layout title={siteTitle}>
-      <Seo title="Početna stranica" />
+      <Seo
+        title="Ordinacija dentalne i estetske medicine dr. Zrinka Kolega"
+        description=" Ordinacija dentalne i estetske medicine dr. Zrinka Kolega je tu za vas
+          u svim situacijama: ako vas boli zub ili želite uljepšati osmijeh, čak
+          i kada godinama niste posjetili stomatologa."
+      />
       <Hero />
       {isAction ? (
         <Akcija data={data.wpgraphql.pages.edges[0].node.akcija} />
