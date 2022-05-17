@@ -52,7 +52,7 @@ const UslugeEstetika = () => {
           photo={p3}
           title="Hijaluronski fileri"
           text="Minimalno invazivni tretmani kože i povećanje usana"
-          link="Dermalni filer"
+          link="Dermalni fileri"
         />
         <UslugaCard
           photo={p4}
