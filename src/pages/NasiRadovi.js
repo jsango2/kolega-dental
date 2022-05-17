@@ -63,7 +63,7 @@ export const pageQuery = graphql`
             id
             naseUslugeFoto {
               fotoNaseUsluge {
-                mediaItemUrl
+                sourceUrl
               }
             }
             content

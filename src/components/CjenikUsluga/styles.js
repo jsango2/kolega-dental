@@ -13,9 +13,8 @@ export const WrapCjenik = styled.div`
   background-position: 17%;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 500px) {
+    background-position: 77%;
   }
 `
 export const Photo = styled.div`

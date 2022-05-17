@@ -14,7 +14,9 @@ const Usluga = ({ naslov, text, photo, id }) => {
       <Naslov inView={inView}>{naslov}</Naslov>
       <Text dangerouslySetInnerHTML={{ __html: text }} inView={inView} />
       <Photos inView={inView}>
-        {photo && <Photo photo={photo.mediaItemUrl} />}
+        {photo.map(p => (
+          <Photo photo={p.sourceUrl} />
+        ))}
       </Photos>
     </WrapUsluga>
   )
