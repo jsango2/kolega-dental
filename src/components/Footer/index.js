@@ -46,7 +46,7 @@ const Footer = () => {
               hello@kolegadental.com{" "}
             </a>{" "}
             <br />
-            <a href="tel:+385 23214854">023 214854</a>
+            <a href="tel:+385 98835312">098 835312</a>
             <br />
             <br /> Radno vrijeme: <br />
             Pon., Sri. 13:00 - 20:30

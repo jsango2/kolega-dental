@@ -9,6 +9,7 @@ const Usluga = ({ naslov, text, photo, id }) => {
     // trigger inView function only once
     triggerOnce: true,
   })
+  console.log(photo)
   return (
     <WrapUsluga id={id} ref={ref}>
       <Naslov inView={inView}>{naslov}</Naslov>
