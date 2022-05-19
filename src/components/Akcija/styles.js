@@ -5,7 +5,7 @@ export const WrapAkcija = styled.div`
   z-index: 2;
   width: 100%;
   height: 170px;
-  background-color: #e14c4c;
+  background-color: #ff6433;
   display: flex;
   justify-content: space-around;
   align-items: center;

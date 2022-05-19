@@ -7,7 +7,6 @@ import {
   WrapSitneTockice,
 } from "./styles.js"
 import UslugaCard from "./uslugaCard.js"
-import p1 from "../../../content/assets/photo1usluge.png"
 import p2 from "../../../content/assets/photo2usluge.png"
 import p3 from "../../../content/assets/photo3usluge.png"
 import p4 from "../../../content/assets/photo4usluge.png"
@@ -15,6 +14,7 @@ import p5 from "../../../content/assets/photo5usluge.png"
 import p6 from "../../../content/assets/photo6usluge.png"
 import p7 from "../../../content/assets/photo7usluge.png"
 import p8 from "../../../content/assets/photo8usluge.png"
+import p22 from "../../../content/assets/photo22usluge.png"
 import tockice from "../../../content/assets/tockiceNaseUsluge.svg"
 import { useInView } from "react-intersection-observer"
 
@@ -44,7 +44,7 @@ const UslugeStomatologija = () => {
       <Rectangle />
       <Usluge>
         <UslugaCard
-          photo={p1}
+          photo={p22}
           title="Estetska stomatologija"
           text="Digital smile design, CAM/CAD tehnologija"
           link="Restorativna i estetska stomatologija"
