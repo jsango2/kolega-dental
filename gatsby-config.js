@@ -7,7 +7,7 @@ module.exports = {
       summary: `Kolega Dental`,
     },
     description: `Kolega Dental`,
-    siteUrl: `https://localhost:8003/`,
+    siteUrl: `https://www.kolegadental.com/`,
     image: `/ogimage.png`,
     social: {
       twitter: `Kolega Dental`,
