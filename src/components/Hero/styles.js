@@ -55,7 +55,6 @@ export const PhotoBox = styled.div`
   display: flex;
   width: 807px;
   height: 646px;
-
   background-image: url(${heroimage});
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +62,8 @@ export const PhotoBox = styled.div`
   margin-left: 85px;
   border-radius: 25px 0 0 25px;
   @media screen and (max-width: 1000px) {
+    background-position: -25px 0;
+
     height: 91vw;
     max-height: 650px;
     width: 100%;
