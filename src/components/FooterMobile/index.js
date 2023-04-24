@@ -9,13 +9,16 @@ import {
   WrapLinks,
   Bottom,
   WrapIcons,
+  EU,
+  WrapEU,
 } from "./styles.js"
 import facebook from "../../../content/assets/facebook.svg"
 import instagram from "../../../content/assets/instagram.svg"
 import logo from "../../../content/assets/FooterMOBLOGO.svg"
 import { Links } from "../Navigation/links.js"
 import { Link } from "gatsby"
-
+import eu1 from "../../../content/assets/eu1.png"
+import eu2 from "../../../content/assets/eu2.png"
 const FooterMobile = () => {
   return (
     <WrapFooter>
@@ -68,6 +71,20 @@ const FooterMobile = () => {
           <li>Web design SUTRA</li>
         </ul>
       </Bottom>
+
+      <EU>
+        <WrapEU>
+          <img src={eu1} alt="eu" />
+        </WrapEU>
+        <WrapEU>
+          <img src={eu2} alt="eu" />
+        </WrapEU>
+        <WrapEU>
+          KOLEGA DENTAL sudjeluje u provedbi financijskog instrumenta
+          sufinanciranog iz Europskog fonda za regionalni razvoj u sklopu
+          Operativnog programa "Konkurentnost i kohezija”.
+        </WrapEU>
+      </EU>
     </WrapFooter>
   )
 }

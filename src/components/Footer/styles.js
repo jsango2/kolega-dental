@@ -36,6 +36,32 @@ export const WrapPratiteNas = styled.div`
     margin-bottom: 1rem; */
   }
 `
+export const EU = styled.div`
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  img {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const WrapEU = styled.div`
+  position: relative;
+  color: #034ea2;
+
+  height: auto;
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
 export const WrapPitanja = styled.div`
   position: relative;
   width: 334px;
